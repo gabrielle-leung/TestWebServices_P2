@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="988cfa58-1ad9-40d7-99fe-2e0819a42990" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 7 - Récupérer un calendrier" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="988cfa58-1ad9-40d7-99fe-2e0819a42990fileName">Test-Case-7---Récupérer-un-calendrier</con:setting></con:settings><con:properties/><con:reportParameters/></con:testCase>
