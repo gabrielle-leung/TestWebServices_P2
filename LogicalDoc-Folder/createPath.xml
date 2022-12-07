@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b392791a-bf43-4728-b2d3-bf0ee8a2482a" isOneWay="false" action="" name="createPath" bindingOperationName="createPath" type="Request-Response" outputName="createPathResponse" inputName="createPath" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b392791a-bf43-4728-b2d3-bf0ee8a2482afileName">createPath</con:setting></con:settings></con:operation>

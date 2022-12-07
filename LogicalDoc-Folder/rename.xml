@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="53a8f65d-72bf-4d31-9f16-ad278846b848" isOneWay="false" action="" name="rename" bindingOperationName="rename" type="Request-Response" outputName="renameResponse" inputName="rename" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="53a8f65d-72bf-4d31-9f16-ad278846b848fileName">rename</con:setting></con:settings></con:operation>

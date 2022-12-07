@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="a76a7484-ca65-45d7-ab20-53eaa941b0e5" isOneWay="false" action="" name="rateDocument" bindingOperationName="rateDocument" type="Request-Response" outputName="rateDocumentResponse" inputName="rateDocument" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a76a7484-ca65-45d7-ab20-53eaa941b0e5fileName">rateDocument</con:setting></con:settings></con:operation>

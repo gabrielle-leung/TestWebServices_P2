@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5eaab848-f4f6-4af3-8c1d-03714e94fb2e" isOneWay="false" action="" name="grantGroup" bindingOperationName="grantGroup" type="Request-Response" outputName="grantGroupResponse" inputName="grantGroup" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5eaab848-f4f6-4af3-8c1d-03714e94fb2efileName">grantGroup</con:setting></con:settings></con:operation>

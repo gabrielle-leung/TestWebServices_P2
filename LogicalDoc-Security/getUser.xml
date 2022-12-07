@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="1d285d90-fe5e-420b-a538-f5c8e84a2f5e" isOneWay="false" action="" name="getUser" bindingOperationName="getUser" type="Request-Response" outputName="getUserResponse" inputName="getUser" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="1d285d90-fe5e-420b-a538-f5c8e84a2f5efileName">getUser</con:setting></con:settings></con:operation>

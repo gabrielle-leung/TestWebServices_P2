@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="812771b7-154c-4f20-9b37-dab5c7cefba2" isOneWay="false" action="" name="deleteBookmark" bindingOperationName="deleteBookmark" type="Request-Response" outputName="deleteBookmarkResponse" inputName="deleteBookmark" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="812771b7-154c-4f20-9b37-dab5c7cefba2fileName">deleteBookmark</con:setting></con:settings></con:operation>

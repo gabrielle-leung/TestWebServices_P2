@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="80cc78f9-4a0a-43d1-aeca-39efa4921422" isOneWay="false" action="" name="listChildren" bindingOperationName="listChildren" type="Request-Response" outputName="listChildrenResponse" inputName="listChildren" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="80cc78f9-4a0a-43d1-aeca-39efa4921422fileName">listChildren</con:setting></con:settings></con:operation>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="f599c629-3767-4d4b-a090-163183f3c03b" isOneWay="false" action="" name="getRootFolder" bindingOperationName="getRootFolder" type="Request-Response" outputName="getRootFolderResponse" inputName="getRootFolder" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="f599c629-3767-4d4b-a090-163183f3c03bfileName">getRootFolder</con:setting></con:settings></con:operation>

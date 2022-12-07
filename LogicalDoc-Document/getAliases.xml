@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="57330162-83c1-4263-a660-2f835eddd271" isOneWay="false" action="" name="getAliases" bindingOperationName="getAliases" type="Request-Response" outputName="getAliasesResponse" inputName="getAliases" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="57330162-83c1-4263-a660-2f835eddd271fileName">getAliases</con:setting></con:settings></con:operation>

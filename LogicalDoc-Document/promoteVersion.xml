@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="d21a1692-37ae-4f24-856c-118a0fa6056b" isOneWay="false" action="" name="promoteVersion" bindingOperationName="promoteVersion" type="Request-Response" outputName="promoteVersionResponse" inputName="promoteVersion" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="d21a1692-37ae-4f24-856c-118a0fa6056bfileName">promoteVersion</con:setting></con:settings></con:operation>

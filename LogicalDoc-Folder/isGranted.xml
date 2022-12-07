@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="94ede8c2-46ad-472d-a46a-439018e9a46d" isOneWay="false" action="" name="isGranted" bindingOperationName="isGranted" type="Request-Response" outputName="isGrantedResponse" inputName="isGranted" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="94ede8c2-46ad-472d-a46a-439018e9a46dfileName">isGranted</con:setting></con:settings></con:operation>

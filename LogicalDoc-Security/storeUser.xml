@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="0d7c52df-c76f-41d5-9274-ab52c01bf04d" isOneWay="false" action="" name="storeUser" bindingOperationName="storeUser" type="Request-Response" outputName="storeUserResponse" inputName="storeUser" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0d7c52df-c76f-41d5-9274-ab52c01bf04dfileName">storeUser</con:setting></con:settings></con:operation>

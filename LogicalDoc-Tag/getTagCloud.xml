@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5ad96b07-6bb2-4651-a983-ff990c861ae2" isOneWay="false" action="" name="getTagCloud" bindingOperationName="getTagCloud" type="Request-Response" outputName="getTagCloudResponse" inputName="getTagCloud" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5ad96b07-6bb2-4651-a983-ff990c861ae2fileName">getTagCloud</con:setting></con:settings></con:operation>

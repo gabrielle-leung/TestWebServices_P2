@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="73c4db58-c6b4-4035-a769-fdba73bb7132" isOneWay="false" action="" name="storeGroup" bindingOperationName="storeGroup" type="Request-Response" outputName="storeGroupResponse" inputName="storeGroup" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="73c4db58-c6b4-4035-a769-fdba73bb7132fileName">storeGroup</con:setting></con:settings></con:operation>

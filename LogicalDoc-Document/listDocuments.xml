@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="be3d4168-7f7d-4632-8157-de8973810dd1" isOneWay="false" action="" name="listDocuments" bindingOperationName="listDocuments" type="Request-Response" outputName="listDocumentsResponse" inputName="listDocuments" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="be3d4168-7f7d-4632-8157-de8973810dd1fileName">listDocuments</con:setting></con:settings></con:operation>

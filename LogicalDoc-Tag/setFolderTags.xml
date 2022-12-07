@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4c45f084-76c9-4c69-8414-f1461fa3bf47" isOneWay="false" action="" name="setFolderTags" bindingOperationName="setFolderTags" type="Request-Response" outputName="setFolderTagsResponse" inputName="setFolderTags" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4c45f084-76c9-4c69-8414-f1461fa3bf47fileName">setFolderTags</con:setting></con:settings></con:operation>

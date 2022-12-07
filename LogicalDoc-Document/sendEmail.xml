@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4ba1b58c-add8-4f25-8e7f-3221224c2ff5" isOneWay="false" action="" name="sendEmail" bindingOperationName="sendEmail" type="Request-Response" outputName="sendEmailResponse" inputName="sendEmail" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4ba1b58c-add8-4f25-8e7f-3221224c2ff5fileName">sendEmail</con:setting></con:settings></con:operation>

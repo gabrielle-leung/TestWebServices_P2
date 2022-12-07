@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="842a8245-8462-4268-a73a-ff018c7e1d64" isOneWay="false" action="" name="deleteTemplate" bindingOperationName="deleteTemplate" type="Request-Response" outputName="deleteTemplateResponse" inputName="deleteTemplate" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="842a8245-8462-4268-a73a-ff018c7e1d64fileName">deleteTemplate</con:setting></con:settings></con:operation>

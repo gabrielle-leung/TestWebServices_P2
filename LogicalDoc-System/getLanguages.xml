@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="d467f304-3ba2-41a3-86b9-913ff8d4a2cf" isOneWay="false" action="" name="getLanguages" bindingOperationName="getLanguages" type="Request-Response" outputName="getLanguagesResponse" inputName="getLanguages" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="d467f304-3ba2-41a3-86b9-913ff8d4a2cffileName">getLanguages</con:setting></con:settings></con:operation>

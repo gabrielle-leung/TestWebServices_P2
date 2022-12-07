@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="ee56996b-b7b0-4105-a9d4-3bb45571b58d" wsaVersion="NONE" name="LogicalDoc-Security" type="wsdl" bindingName="{http://endpoint.soap.webservice.logicaldoc.com/}SoapSecurityServiceServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8180/logicaldoc/services/Security?wsdl" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="ee56996b-b7b0-4105-a9d4-3bb45571b58dfileName">LogicalDoc-Security</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://localhost:8180/logicaldoc/services/Security?wsdl"><con:part><con:url>http://localhost:8180/logicaldoc/services/Security?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="SoapSecurityServiceService" targetNamespace="http://endpoint.soap.webservice.logicaldoc.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://endpoint.soap.webservice.logicaldoc.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://ws.logicaldoc.com">
+  <wsdl:import location="http://localhost:8180/logicaldoc/services/Security?wsdl=Security.wsdl" namespace="http://ws.logicaldoc.com"></wsdl:import>
+  <wsdl:binding name="SoapSecurityServiceServiceSoapBinding" type="ns1:Security">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getUserByUsername">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getUserByUsername">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUserByUsernameResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="listUsers">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="listUsers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listUsersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="storeUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="storeUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getGroup">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getGroup">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getGroupResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="listGroups">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="listGroups">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listGroupsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroup">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteGroup">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteGroupResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeGroup">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="storeGroup">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="storeGroupResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="changePassword">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="changePasswordResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SoapSecurityServiceService">
+    <wsdl:port binding="tns:SoapSecurityServiceServiceSoapBinding" name="SoapSecurityServicePort">
+      <soap:address location="http://localhost:8180/logicaldoc/services/Security"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8180/logicaldoc/services/Security?wsdl=Security.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="Security" targetNamespace="http://ws.logicaldoc.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://ws.logicaldoc.com">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.logicaldoc.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.logicaldoc.com">
+      <xs:element name="changePassword" type="tns:changePassword"/>
+      <xs:element name="changePasswordResponse" type="tns:changePasswordResponse"/>
+      <xs:element name="deleteGroup" type="tns:deleteGroup"/>
+      <xs:element name="deleteGroupResponse" type="tns:deleteGroupResponse"/>
+      <xs:element name="deleteUser" type="tns:deleteUser"/>
+      <xs:element name="deleteUserResponse" type="tns:deleteUserResponse"/>
+      <xs:element name="getGroup" type="tns:getGroup"/>
+      <xs:element name="getGroupResponse" type="tns:getGroupResponse"/>
+      <xs:element name="getUser" type="tns:getUser"/>
+      <xs:element name="getUserByUsername" type="tns:getUserByUsername"/>
+      <xs:element name="getUserByUsernameResponse" type="tns:getUserByUsernameResponse"/>
+      <xs:element name="getUserResponse" type="tns:getUserResponse"/>
+      <xs:element name="listGroups" type="tns:listGroups"/>
+      <xs:element name="listGroupsResponse" type="tns:listGroupsResponse"/>
+      <xs:element name="listUsers" type="tns:listUsers"/>
+      <xs:element name="listUsersResponse" type="tns:listUsersResponse"/>
+      <xs:element name="storeGroup" type="tns:storeGroup"/>
+      <xs:element name="storeGroupResponse" type="tns:storeGroupResponse"/>
+      <xs:element name="storeUser" type="tns:storeUser"/>
+      <xs:element name="storeUserResponse" type="tns:storeUserResponse"/>
+      <xs:complexType name="getUserByUsername">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element minOccurs="0" name="username" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getUserByUsernameResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="user" type="tns:WSUser"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSUser">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="city" type="xs:string"/>
+          <xs:element minOccurs="0" name="country" type="xs:string"/>
+          <xs:element minOccurs="0" name="email" type="xs:string"/>
+          <xs:element minOccurs="0" name="email2" type="xs:string"/>
+          <xs:element minOccurs="0" name="emailSignature" type="xs:string"/>
+          <xs:element minOccurs="0" name="emailSignature2" type="xs:string"/>
+          <xs:element name="enabled" type="xs:int"/>
+          <xs:element minOccurs="0" name="firstName" type="xs:string"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="groupIds" nillable="true" type="xs:long"/>
+          <xs:element name="id" type="xs:long"/>
+          <xs:element minOccurs="0" name="language" type="xs:string"/>
+          <xs:element minOccurs="0" name="lastModified" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="password" type="xs:string"/>
+          <xs:element minOccurs="0" name="passwordChanged" type="xs:string"/>
+          <xs:element name="passwordExpires" type="xs:int"/>
+          <xs:element minOccurs="0" name="passwordmd4" type="xs:string"/>
+          <xs:element minOccurs="0" name="postalcode" type="xs:string"/>
+          <xs:element name="quota" type="xs:long"/>
+          <xs:element name="quotaCount" type="xs:long"/>
+          <xs:element name="source" type="xs:int"/>
+          <xs:element minOccurs="0" name="state" type="xs:string"/>
+          <xs:element minOccurs="0" name="street" type="xs:string"/>
+          <xs:element minOccurs="0" name="telephone" type="xs:string"/>
+          <xs:element minOccurs="0" name="telephone2" type="xs:string"/>
+          <xs:element name="type" type="xs:int"/>
+          <xs:element minOccurs="0" name="username" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listUsers">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element minOccurs="0" name="group" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listUsersResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="user" type="tns:WSUser"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="storeUser">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element minOccurs="0" name="user" type="tns:WSUser"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="storeUserResponse">
+        <xs:sequence>
+          <xs:element name="userId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getGroup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="groupId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getGroupResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="group" type="tns:WSGroup"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSGroup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="description" type="xs:string"/>
+          <xs:element name="id" type="xs:long"/>
+          <xs:element minOccurs="0" name="inheritGroupId" type="xs:long"/>
+          <xs:element minOccurs="0" name="lastModified" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="source" type="xs:string"/>
+          <xs:element name="type" type="xs:int"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="userIds" nillable="true" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getUser">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="userId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getUserResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="user" type="tns:WSUser"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteUser">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="userId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteUserResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="listGroups">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listGroupsResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="group" type="tns:WSGroup"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteGroup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="groupId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteGroupResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="storeGroup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element minOccurs="0" name="group" type="tns:WSGroup"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="storeGroupResponse">
+        <xs:sequence>
+          <xs:element name="groupId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="changePassword">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="userId" type="xs:long"/>
+          <xs:element minOccurs="0" name="oldPassword" type="xs:string"/>
+          <xs:element minOccurs="0" name="newPassword" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="changePasswordResponse">
+        <xs:sequence>
+          <xs:element name="changeResult" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Exception" type="tns:Exception"/>
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getUserByUsernameResponse">
+    <wsdl:part element="ns1:getUserByUsernameResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserResponse">
+    <wsdl:part element="ns1:getUserResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="changePasswordResponse">
+    <wsdl:part element="ns1:changePasswordResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserByUsername">
+    <wsdl:part element="ns1:getUserByUsername" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupResponse">
+    <wsdl:part element="ns1:getGroupResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUser">
+    <wsdl:part element="ns1:getUser" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part element="ns1:Exception" name="Exception"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="changePassword">
+    <wsdl:part element="ns1:changePassword" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listGroupsResponse">
+    <wsdl:part element="ns1:listGroupsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listUsersResponse">
+    <wsdl:part element="ns1:listUsersResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="storeUserResponse">
+    <wsdl:part element="ns1:storeUserResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listUsers">
+    <wsdl:part element="ns1:listUsers" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="storeUser">
+    <wsdl:part element="ns1:storeUser" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroup">
+    <wsdl:part element="ns1:getGroup" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteUser">
+    <wsdl:part element="ns1:deleteUser" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listGroups">
+    <wsdl:part element="ns1:listGroups" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteGroupResponse">
+    <wsdl:part element="ns1:deleteGroupResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteGroup">
+    <wsdl:part element="ns1:deleteGroup" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="storeGroupResponse">
+    <wsdl:part element="ns1:storeGroupResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteUserResponse">
+    <wsdl:part element="ns1:deleteUserResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="storeGroup">
+    <wsdl:part element="ns1:storeGroup" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Security">
+    <wsdl:operation name="getUserByUsername">
+      <wsdl:input message="ns1:getUserByUsername" name="getUserByUsername"></wsdl:input>
+      <wsdl:output message="ns1:getUserByUsernameResponse" name="getUserByUsernameResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="listUsers">
+      <wsdl:input message="ns1:listUsers" name="listUsers"></wsdl:input>
+      <wsdl:output message="ns1:listUsersResponse" name="listUsersResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeUser">
+      <wsdl:input message="ns1:storeUser" name="storeUser"></wsdl:input>
+      <wsdl:output message="ns1:storeUserResponse" name="storeUserResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getGroup">
+      <wsdl:input message="ns1:getGroup" name="getGroup"></wsdl:input>
+      <wsdl:output message="ns1:getGroupResponse" name="getGroupResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <wsdl:input message="ns1:getUser" name="getUser"></wsdl:input>
+      <wsdl:output message="ns1:getUserResponse" name="getUserResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUser">
+      <wsdl:input message="ns1:deleteUser" name="deleteUser"></wsdl:input>
+      <wsdl:output message="ns1:deleteUserResponse" name="deleteUserResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="listGroups">
+      <wsdl:input message="ns1:listGroups" name="listGroups"></wsdl:input>
+      <wsdl:output message="ns1:listGroupsResponse" name="listGroupsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroup">
+      <wsdl:input message="ns1:deleteGroup" name="deleteGroup"></wsdl:input>
+      <wsdl:output message="ns1:deleteGroupResponse" name="deleteGroupResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeGroup">
+      <wsdl:input message="ns1:storeGroup" name="storeGroup"></wsdl:input>
+      <wsdl:output message="ns1:storeGroupResponse" name="storeGroupResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <wsdl:input message="ns1:changePassword" name="changePassword"></wsdl:input>
+      <wsdl:output message="ns1:changePasswordResponse" name="changePasswordResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8180/logicaldoc/services/Security</con:endpoint></con:endpoints></con:interface>

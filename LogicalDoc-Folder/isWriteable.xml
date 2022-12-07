@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="97ab4b93-5103-421b-848e-9942e051f207" isOneWay="false" action="" name="isWriteable" bindingOperationName="isWriteable" type="Request-Response" outputName="isWriteableResponse" inputName="isWriteable" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="97ab4b93-5103-421b-848e-9942e051f207fileName">isWriteable</con:setting></con:settings></con:operation>

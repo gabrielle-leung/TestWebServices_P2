@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="703d6d07-67b9-40f8-8833-239e7d016e8c" isOneWay="false" action="" name="getUserByUsername" bindingOperationName="getUserByUsername" type="Request-Response" outputName="getUserByUsernameResponse" inputName="getUserByUsername" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="703d6d07-67b9-40f8-8833-239e7d016e8cfileName">getUserByUsername</con:setting></con:settings></con:operation>

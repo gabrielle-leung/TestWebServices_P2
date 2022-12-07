@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="7d7dbf5e-fec7-44dd-97e0-da123abb95f8" isOneWay="false" action="" name="getFolder" bindingOperationName="getFolder" type="Request-Response" outputName="getFolderResponse" inputName="getFolder" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="7d7dbf5e-fec7-44dd-97e0-da123abb95f8fileName">getFolder</con:setting></con:settings></con:operation>

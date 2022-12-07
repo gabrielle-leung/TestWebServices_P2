@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4b1cf269-34b0-4dbf-ac99-2eadd396621d" isOneWay="false" action="" name="getGroup" bindingOperationName="getGroup" type="Request-Response" outputName="getGroupResponse" inputName="getGroup" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4b1cf269-34b0-4dbf-ac99-2eadd396621dfileName">getGroup</con:setting></con:settings></con:operation>

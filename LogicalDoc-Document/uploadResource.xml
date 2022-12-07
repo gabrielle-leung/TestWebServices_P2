@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="d7b99138-ee0a-472c-82eb-e3e672e8dedc" isOneWay="false" action="" name="uploadResource" bindingOperationName="uploadResource" type="Request-Response" outputName="uploadResourceResponse" inputName="uploadResource" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="d7b99138-ee0a-472c-82eb-e3e672e8dedcfileName">uploadResource</con:setting></con:settings></con:operation>

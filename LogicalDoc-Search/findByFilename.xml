@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ae7b282a-3c9a-4728-9772-3e751eb6def9" isOneWay="false" action="" name="findByFilename" bindingOperationName="findByFilename" type="Request-Response" outputName="findByFilenameResponse" inputName="findByFilename" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ae7b282a-3c9a-4728-9772-3e751eb6def9fileName">findByFilename</con:setting></con:settings></con:operation>

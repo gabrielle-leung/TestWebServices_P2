@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="fa247261-a89a-47ac-9bfb-e292c6e3a2fa" isOneWay="false" action="" name="copy" bindingOperationName="copy" type="Request-Response" outputName="copyResponse" inputName="copy" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="fa247261-a89a-47ac-9bfb-e292c6e3a2fafileName">copy</con:setting></con:settings></con:operation>

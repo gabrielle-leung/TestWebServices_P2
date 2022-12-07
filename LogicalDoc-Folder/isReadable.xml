@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="400eec0e-73b9-4361-b99a-b490c951bf17" isOneWay="false" action="" name="isReadable" bindingOperationName="isReadable" type="Request-Response" outputName="isReadableResponse" inputName="isReadable" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="400eec0e-73b9-4361-b99a-b490c951bf17fileName">isReadable</con:setting></con:settings></con:operation>

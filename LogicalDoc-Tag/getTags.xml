@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4d56f036-fe48-4585-a434-84ee2dc804d0" isOneWay="false" action="" name="getTags" bindingOperationName="getTags" type="Request-Response" outputName="getTagsResponse" inputName="getTags" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4d56f036-fe48-4585-a434-84ee2dc804d0fileName">getTags</con:setting></con:settings></con:operation>

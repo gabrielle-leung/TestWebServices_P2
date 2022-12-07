@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="9de2abe5-118f-427b-8610-a68681588c15" isOneWay="false" action="" name="listGroups" bindingOperationName="listGroups" type="Request-Response" outputName="listGroupsResponse" inputName="listGroups" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="9de2abe5-118f-427b-8610-a68681588c15fileName">listGroups</con:setting></con:settings></con:operation>

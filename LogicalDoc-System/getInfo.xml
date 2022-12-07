@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4cba12ab-9926-4588-8917-571552060b53" isOneWay="false" action="" name="getInfo" bindingOperationName="getInfo" type="Request-Response" outputName="getInfoResponse" inputName="getInfo" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4cba12ab-9926-4588-8917-571552060b53fileName">getInfo</con:setting></con:settings></con:operation>

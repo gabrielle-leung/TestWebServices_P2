@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="195a56b6-a6e2-41a4-b5cd-2c6390a3de1b" isOneWay="false" action="" name="unbookmarkDocument" bindingOperationName="unbookmarkDocument" type="Request-Response" outputName="unbookmarkDocumentResponse" inputName="unbookmarkDocument" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="195a56b6-a6e2-41a4-b5cd-2c6390a3de1bfileName">unbookmarkDocument</con:setting></con:settings><con:call id="08eb4558-dea0-4fbd-ac26-226102f9fb68" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8180/logicaldoc/services/Bookmark</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:unbookmarkDocument>
+         <!--Optional:-->
+         <sid>?</sid>
+         <docId>?</docId>
+      </ws:unbookmarkDocument>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Bookmark/unbookmarkDocument"/><con:wsrmConfig version="1.2"/></con:call></con:operation>

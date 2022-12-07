@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="2589eaf3-8366-4b36-afae-44075b586a57" isOneWay="false" action="" name="delete" bindingOperationName="delete" type="Request-Response" outputName="deleteResponse" inputName="delete" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="2589eaf3-8366-4b36-afae-44075b586a57fileName">delete</con:setting></con:settings></con:operation>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ba7a530e-78bd-4aa8-a896-0d4c47e2c20a" isOneWay="false" action="" name="unbookmarkFolder" bindingOperationName="unbookmarkFolder" type="Request-Response" outputName="unbookmarkFolderResponse" inputName="unbookmarkFolder" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ba7a530e-78bd-4aa8-a896-0d4c47e2c20afileName">unbookmarkFolder</con:setting></con:settings></con:operation>

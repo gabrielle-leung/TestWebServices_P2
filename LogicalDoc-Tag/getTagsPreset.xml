@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="760054c8-1837-4e81-bdb8-d73a746731a0" isOneWay="false" action="" name="getTagsPreset" bindingOperationName="getTagsPreset" type="Request-Response" outputName="getTagsPresetResponse" inputName="getTagsPreset" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="760054c8-1837-4e81-bdb8-d73a746731a0fileName">getTagsPreset</con:setting></con:settings></con:operation>

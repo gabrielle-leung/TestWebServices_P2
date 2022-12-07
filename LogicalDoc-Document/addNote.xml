@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="8939fb59-7700-4959-9a62-1b114c3191c4" isOneWay="false" action="" name="addNote" bindingOperationName="addNote" type="Request-Response" outputName="addNoteResponse" inputName="addNote" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="8939fb59-7700-4959-9a62-1b114c3191c4fileName">addNote</con:setting></con:settings></con:operation>

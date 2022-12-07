@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="33b0103a-3e2c-4b7c-a8ff-3aea68f6f9dc" isOneWay="false" action="" name="unprotect" bindingOperationName="unprotect" type="Request-Response" outputName="unprotectResponse" inputName="unprotect" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="33b0103a-3e2c-4b7c-a8ff-3aea68f6f9dcfileName">unprotect</con:setting></con:settings></con:operation>

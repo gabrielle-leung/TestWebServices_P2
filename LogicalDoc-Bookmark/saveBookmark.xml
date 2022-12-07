@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="df23a651-2b97-4a04-ade2-b4896fa03c38" isOneWay="false" action="" name="saveBookmark" bindingOperationName="saveBookmark" type="Request-Response" outputName="saveBookmarkResponse" inputName="saveBookmark" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="df23a651-2b97-4a04-ade2-b4896fa03c38fileName">saveBookmark</con:setting></con:settings></con:operation>

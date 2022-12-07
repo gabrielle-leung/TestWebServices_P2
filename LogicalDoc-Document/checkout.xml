@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="7aa80c48-f730-4a6c-861f-977a40366f31" isOneWay="false" action="" name="checkout" bindingOperationName="checkout" type="Request-Response" outputName="checkoutResponse" inputName="checkout" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="7aa80c48-f730-4a6c-861f-977a40366f31fileName">checkout</con:setting></con:settings></con:operation>

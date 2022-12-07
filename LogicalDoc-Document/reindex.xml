@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="90ecbca1-148e-461a-8c3f-c74df154d656" isOneWay="false" action="" name="reindex" bindingOperationName="reindex" type="Request-Response" outputName="reindexResponse" inputName="reindex" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="90ecbca1-148e-461a-8c3f-c74df154d656fileName">reindex</con:setting></con:settings></con:operation>

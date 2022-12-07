@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="0864461c-9d09-4f8a-8714-a8aad6979163" isOneWay="false" action="" name="valid" bindingOperationName="valid" type="Request-Response" outputName="validResponse" inputName="valid" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0864461c-9d09-4f8a-8714-a8aad6979163fileName">valid</con:setting></con:settings><con:call id="963d9cdc-b397-40b9-a209-c5cce73949e1" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8180/logicaldoc/services/Auth</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:valid>
+         <!--Optional:-->
+         <sid>c0012edd-41aa-4c38-ad70-77b30a6e304e</sid>
+      </ws:valid>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Auth/valid"/><con:wsrmConfig version="1.2"/></con:call></con:operation>

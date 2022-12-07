@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="7c2347b4-53de-4e22-831e-b3a06055de54" isOneWay="false" action="" name="checkin" bindingOperationName="checkin" type="Request-Response" outputName="checkinResponse" inputName="checkin" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="7c2347b4-53de-4e22-831e-b3a06055de54fileName">checkin</con:setting></con:settings></con:operation>

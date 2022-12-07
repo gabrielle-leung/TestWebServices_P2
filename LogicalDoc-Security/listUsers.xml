@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="d15414c9-e08e-4e81-a96b-b4b7a6bcfb13" isOneWay="false" action="" name="listUsers" bindingOperationName="listUsers" type="Request-Response" outputName="listUsersResponse" inputName="listUsers" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="d15414c9-e08e-4e81-a96b-b4b7a6bcfb13fileName">listUsers</con:setting></con:settings></con:operation>

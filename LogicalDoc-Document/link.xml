@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e7cab301-d30d-4d37-9040-380c7f2d59a1" isOneWay="false" action="" name="link" bindingOperationName="link" type="Request-Response" outputName="linkResponse" inputName="link" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="e7cab301-d30d-4d37-9040-380c7f2d59a1fileName">link</con:setting></con:settings></con:operation>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="bbc96cf2-8d82-436c-95b8-e733895afc75" isOneWay="false" action="" name="getTemplate" bindingOperationName="getTemplate" type="Request-Response" outputName="getTemplateResponse" inputName="getTemplate" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="bbc96cf2-8d82-436c-95b8-e733895afc75fileName">getTemplate</con:setting></con:settings></con:operation>

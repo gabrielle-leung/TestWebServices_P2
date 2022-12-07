@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b84a3d9d-3277-407a-ad03-e629abbd3632" isOneWay="false" action="" name="getGrantedUsers" bindingOperationName="getGrantedUsers" type="Request-Response" outputName="getGrantedUsersResponse" inputName="getGrantedUsers" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b84a3d9d-3277-407a-ad03-e629abbd3632fileName">getGrantedUsers</con:setting></con:settings></con:operation>

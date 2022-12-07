@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="cf24fd5a-2f78-47be-9dc9-6ca502d9f15c" isOneWay="false" action="" name="getResource" bindingOperationName="getResource" type="Request-Response" outputName="getResourceResponse" inputName="getResource" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="cf24fd5a-2f78-47be-9dc9-6ca502d9f15cfileName">getResource</con:setting></con:settings></con:operation>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b77f38e1-e591-452d-8e85-3bbbc17878ab" isOneWay="false" action="" name="createDownloadTicket" bindingOperationName="createDownloadTicket" type="Request-Response" outputName="createDownloadTicketResponse" inputName="createDownloadTicket" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b77f38e1-e591-452d-8e85-3bbbc17878abfileName">createDownloadTicket</con:setting></con:settings></con:operation>

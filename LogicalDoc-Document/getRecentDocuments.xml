@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="08b0a060-0034-46d1-b7c5-e361a22f2e6a" isOneWay="false" action="" name="getRecentDocuments" bindingOperationName="getRecentDocuments" type="Request-Response" outputName="getRecentDocumentsResponse" inputName="getRecentDocuments" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="08b0a060-0034-46d1-b7c5-e361a22f2e6afileName">getRecentDocuments</con:setting></con:settings></con:operation>

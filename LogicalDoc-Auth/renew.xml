@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5fc2aa92-d074-4253-a599-f09190ae71b5" isOneWay="false" action="" name="renew" bindingOperationName="renew" type="Request-Response" outputName="renewResponse" inputName="renew" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5fc2aa92-d074-4253-a599-f09190ae71b5fileName">renew</con:setting></con:settings><con:call id="62d8260b-4d6e-4892-b0d2-0c3db26c917b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8180/logicaldoc/services/Auth</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:renew>
+         <!--Optional:-->
+         <sid>?</sid>
+      </ws:renew>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Auth/renew"/><con:wsrmConfig version="1.2"/></con:call></con:operation>

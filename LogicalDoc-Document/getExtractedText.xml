@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="f5158e03-e934-4b5d-b5c0-800e222b9f37" isOneWay="false" action="" name="getExtractedText" bindingOperationName="getExtractedText" type="Request-Response" outputName="getExtractedTextResponse" inputName="getExtractedText" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="f5158e03-e934-4b5d-b5c0-800e222b9f37fileName">getExtractedText</con:setting></con:settings></con:operation>

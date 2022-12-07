@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="3d58457a-f860-4539-8c2a-ce7f71c781b1" isOneWay="false" action="" name="getDocumentByCustomId" bindingOperationName="getDocumentByCustomId" type="Request-Response" outputName="getDocumentByCustomIdResponse" inputName="getDocumentByCustomId" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="3d58457a-f860-4539-8c2a-ce7f71c781b1fileName">getDocumentByCustomId</con:setting></con:settings></con:operation>

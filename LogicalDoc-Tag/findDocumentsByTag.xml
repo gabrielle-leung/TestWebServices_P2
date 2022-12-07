@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="8d7e6291-bea8-4a99-815b-219e95db6837" isOneWay="false" action="" name="findDocumentsByTag" bindingOperationName="findDocumentsByTag" type="Request-Response" outputName="findDocumentsByTagResponse" inputName="findDocumentsByTag" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="8d7e6291-bea8-4a99-815b-219e95db6837fileName">findDocumentsByTag</con:setting></con:settings><con:call id="8a02af7d-2522-4405-a29b-3f82af68d29d" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8180/logicaldoc/services/Tag</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:findDocumentsByTag>
+         <!--Optional:-->
+         <sid>?</sid>
+         <!--Optional:-->
+         <tag>?</tag>
+      </ws:findDocumentsByTag>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Tag/findDocumentsByTag"/><con:wsrmConfig version="1.2"/></con:call></con:operation>

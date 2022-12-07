@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="a4a3f442-fe30-4175-bf98-fa02b22c54f6" isOneWay="false" action="" name="grantUser" bindingOperationName="grantUser" type="Request-Response" outputName="grantUserResponse" inputName="grantUser" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a4a3f442-fe30-4175-bf98-fa02b22c54f6fileName">grantUser</con:setting></con:settings></con:operation>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="df854554-571e-45d7-95c9-151ebdbc1141" wsaVersion="NONE" name="LogicalDoc-Bookmark" type="wsdl" bindingName="{http://endpoint.soap.webservice.logicaldoc.com/}SoapBookmarkServiceServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8180/logicaldoc/services/Bookmark?wsdl" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="df854554-571e-45d7-95c9-151ebdbc1141fileName">LogicalDoc-Bookmark</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://localhost:8180/logicaldoc/services/Bookmark?wsdl"><con:part><con:url>http://localhost:8180/logicaldoc/services/Bookmark?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="SoapBookmarkServiceService" targetNamespace="http://endpoint.soap.webservice.logicaldoc.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://endpoint.soap.webservice.logicaldoc.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://ws.logicaldoc.com">
+  <wsdl:import location="http://localhost:8180/logicaldoc/services/Bookmark?wsdl=Bookmark.wsdl" namespace="http://ws.logicaldoc.com"></wsdl:import>
+  <wsdl:binding name="SoapBookmarkServiceServiceSoapBinding" type="ns1:Bookmark">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="unbookmarkFolder">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="unbookmarkFolder">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="unbookmarkFolderResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveBookmark">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="saveBookmark">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="saveBookmarkResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="bookmarkDocument">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="bookmarkDocument">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="bookmarkDocumentResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteBookmark">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteBookmark">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteBookmarkResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="unbookmarkDocument">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="unbookmarkDocument">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="unbookmarkDocumentResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBookmarks">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getBookmarks">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBookmarksResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="bookmarkFolder">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="bookmarkFolder">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="bookmarkFolderResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SoapBookmarkServiceService">
+    <wsdl:port binding="tns:SoapBookmarkServiceServiceSoapBinding" name="SoapBookmarkServicePort">
+      <soap:address location="http://localhost:8180/logicaldoc/services/Bookmark"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8180/logicaldoc/services/Bookmark?wsdl=Bookmark.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="Bookmark" targetNamespace="http://ws.logicaldoc.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://ws.logicaldoc.com">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.logicaldoc.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.logicaldoc.com">
+      <xs:element name="bookmarkDocument" type="tns:bookmarkDocument"/>
+      <xs:element name="bookmarkDocumentResponse" type="tns:bookmarkDocumentResponse"/>
+      <xs:element name="bookmarkFolder" type="tns:bookmarkFolder"/>
+      <xs:element name="bookmarkFolderResponse" type="tns:bookmarkFolderResponse"/>
+      <xs:element name="deleteBookmark" type="tns:deleteBookmark"/>
+      <xs:element name="deleteBookmarkResponse" type="tns:deleteBookmarkResponse"/>
+      <xs:element name="getBookmarks" type="tns:getBookmarks"/>
+      <xs:element name="getBookmarksResponse" type="tns:getBookmarksResponse"/>
+      <xs:element name="saveBookmark" type="tns:saveBookmark"/>
+      <xs:element name="saveBookmarkResponse" type="tns:saveBookmarkResponse"/>
+      <xs:element name="unbookmarkDocument" type="tns:unbookmarkDocument"/>
+      <xs:element name="unbookmarkDocumentResponse" type="tns:unbookmarkDocumentResponse"/>
+      <xs:element name="unbookmarkFolder" type="tns:unbookmarkFolder"/>
+      <xs:element name="unbookmarkFolderResponse" type="tns:unbookmarkFolderResponse"/>
+      <xs:complexType name="unbookmarkFolder">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="folderId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="unbookmarkFolderResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="saveBookmark">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element minOccurs="0" name="bookmark" type="tns:WSBookmark"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSBookmark">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="description" type="xs:string"/>
+          <xs:element minOccurs="0" name="fileType" type="xs:string"/>
+          <xs:element name="id" type="xs:long"/>
+          <xs:element name="position" type="xs:int"/>
+          <xs:element name="targetId" type="xs:long"/>
+          <xs:element minOccurs="0" name="title" type="xs:string"/>
+          <xs:element name="type" type="xs:int"/>
+          <xs:element name="userId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveBookmarkResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bookmark" type="tns:WSBookmark"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="bookmarkDocument">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="docId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="bookmarkDocumentResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bookmark" type="tns:WSBookmark"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteBookmark">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="bookmarkId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteBookmarkResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="unbookmarkDocument">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="docId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="unbookmarkDocumentResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="getBookmarks">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBookmarksResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="bookmark" type="tns:WSBookmark"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="bookmarkFolder">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="folderId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="bookmarkFolderResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bookmark" type="tns:WSBookmark"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Exception" type="tns:Exception"/>
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="unbookmarkFolder">
+    <wsdl:part element="ns1:unbookmarkFolder" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveBookmark">
+    <wsdl:part element="ns1:saveBookmark" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="unbookmarkDocumentResponse">
+    <wsdl:part element="ns1:unbookmarkDocumentResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveBookmarkResponse">
+    <wsdl:part element="ns1:saveBookmarkResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="bookmarkDocument">
+    <wsdl:part element="ns1:bookmarkDocument" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteBookmark">
+    <wsdl:part element="ns1:deleteBookmark" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="bookmarkDocumentResponse">
+    <wsdl:part element="ns1:bookmarkDocumentResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteBookmarkResponse">
+    <wsdl:part element="ns1:deleteBookmarkResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="unbookmarkDocument">
+    <wsdl:part element="ns1:unbookmarkDocument" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="bookmarkFolderResponse">
+    <wsdl:part element="ns1:bookmarkFolderResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBookmarksResponse">
+    <wsdl:part element="ns1:getBookmarksResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="unbookmarkFolderResponse">
+    <wsdl:part element="ns1:unbookmarkFolderResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part element="ns1:Exception" name="Exception"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="bookmarkFolder">
+    <wsdl:part element="ns1:bookmarkFolder" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBookmarks">
+    <wsdl:part element="ns1:getBookmarks" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Bookmark">
+    <wsdl:operation name="unbookmarkFolder">
+      <wsdl:input message="ns1:unbookmarkFolder" name="unbookmarkFolder"></wsdl:input>
+      <wsdl:output message="ns1:unbookmarkFolderResponse" name="unbookmarkFolderResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveBookmark">
+      <wsdl:input message="ns1:saveBookmark" name="saveBookmark"></wsdl:input>
+      <wsdl:output message="ns1:saveBookmarkResponse" name="saveBookmarkResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="bookmarkDocument">
+      <wsdl:input message="ns1:bookmarkDocument" name="bookmarkDocument"></wsdl:input>
+      <wsdl:output message="ns1:bookmarkDocumentResponse" name="bookmarkDocumentResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteBookmark">
+      <wsdl:input message="ns1:deleteBookmark" name="deleteBookmark"></wsdl:input>
+      <wsdl:output message="ns1:deleteBookmarkResponse" name="deleteBookmarkResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="unbookmarkDocument">
+      <wsdl:input message="ns1:unbookmarkDocument" name="unbookmarkDocument"></wsdl:input>
+      <wsdl:output message="ns1:unbookmarkDocumentResponse" name="unbookmarkDocumentResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBookmarks">
+      <wsdl:input message="ns1:getBookmarks" name="getBookmarks"></wsdl:input>
+      <wsdl:output message="ns1:getBookmarksResponse" name="getBookmarksResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="bookmarkFolder">
+      <wsdl:input message="ns1:bookmarkFolder" name="bookmarkFolder"></wsdl:input>
+      <wsdl:output message="ns1:bookmarkFolderResponse" name="bookmarkFolderResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8180/logicaldoc/services/Bookmark</con:endpoint></con:endpoints></con:interface>

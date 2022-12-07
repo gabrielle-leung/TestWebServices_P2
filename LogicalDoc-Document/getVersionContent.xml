@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="3181edb2-0d3b-457f-a0db-38524e1eaa96" isOneWay="false" action="" name="getVersionContent" bindingOperationName="getVersionContent" type="Request-Response" outputName="getVersionContentResponse" inputName="getVersionContent" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="3181edb2-0d3b-457f-a0db-38524e1eaa96fileName">getVersionContent</con:setting></con:settings></con:operation>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="ec583109-510f-4905-9c47-b9db880a85d1" wsaVersion="NONE" name="LogicalDoc-System" type="wsdl" bindingName="{http://endpoint.soap.webservice.logicaldoc.com/}SoapSystemServiceServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8180/logicaldoc/services/System?wsdl" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="ec583109-510f-4905-9c47-b9db880a85d1fileName">LogicalDoc-System</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://localhost:8180/logicaldoc/services/System?wsdl"><con:part><con:url>http://localhost:8180/logicaldoc/services/System?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="SoapSystemServiceService" targetNamespace="http://endpoint.soap.webservice.logicaldoc.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://endpoint.soap.webservice.logicaldoc.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://ws.logicaldoc.com">
+  <wsdl:import location="http://localhost:8180/logicaldoc/services/System?wsdl=System.wsdl" namespace="http://ws.logicaldoc.com"></wsdl:import>
+  <wsdl:binding name="SoapSystemServiceServiceSoapBinding" type="ns1:System">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getLanguages">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getLanguages">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getLanguagesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getStatistics">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getStatistics">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getStatisticsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SoapSystemServiceService">
+    <wsdl:port binding="tns:SoapSystemServiceServiceSoapBinding" name="SoapSystemServicePort">
+      <soap:address location="http://localhost:8180/logicaldoc/services/System"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8180/logicaldoc/services/System?wsdl=System.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="System" targetNamespace="http://ws.logicaldoc.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://ws.logicaldoc.com">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.logicaldoc.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.logicaldoc.com">
+      <xs:element name="getInfo" type="tns:getInfo"/>
+      <xs:element name="getInfoResponse" type="tns:getInfoResponse"/>
+      <xs:element name="getLanguages" type="tns:getLanguages"/>
+      <xs:element name="getLanguagesResponse" type="tns:getLanguagesResponse"/>
+      <xs:element name="getStatistics" type="tns:getStatistics"/>
+      <xs:element name="getStatisticsResponse" type="tns:getStatisticsResponse"/>
+      <xs:complexType name="getLanguages">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="tenantOrSid" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getLanguagesResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="language" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getInfo">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="getInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="info" type="tns:WSSystemInfo"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSSystemInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bugs" type="xs:string"/>
+          <xs:element minOccurs="0" name="date" type="xs:string"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="features" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="forum" type="xs:string"/>
+          <xs:element minOccurs="0" name="help" type="xs:string"/>
+          <xs:element minOccurs="0" name="hostName" type="xs:string"/>
+          <xs:element minOccurs="0" name="installationId" type="xs:string"/>
+          <xs:element minOccurs="0" name="licensee" type="xs:string"/>
+          <xs:element minOccurs="0" name="product" type="xs:string"/>
+          <xs:element minOccurs="0" name="productName" type="xs:string"/>
+          <xs:element minOccurs="0" name="release" type="xs:string"/>
+          <xs:element minOccurs="0" name="runLevel" type="xs:string"/>
+          <xs:element minOccurs="0" name="support" type="xs:string"/>
+          <xs:element minOccurs="0" name="url" type="xs:string"/>
+          <xs:element minOccurs="0" name="vendor" type="xs:string"/>
+          <xs:element minOccurs="0" name="vendorAddress" type="xs:string"/>
+          <xs:element minOccurs="0" name="vendorCap" type="xs:string"/>
+          <xs:element minOccurs="0" name="vendorCity" type="xs:string"/>
+          <xs:element minOccurs="0" name="vendorCountry" type="xs:string"/>
+          <xs:element minOccurs="0" name="year" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getStatistics">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getStatisticsResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="parameter" type="tns:WSParameter"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="value" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Exception" type="tns:Exception"/>
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getInfoResponse">
+    <wsdl:part element="ns1:getInfoResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLanguagesResponse">
+    <wsdl:part element="ns1:getLanguagesResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getInfo">
+    <wsdl:part element="ns1:getInfo" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getStatistics">
+    <wsdl:part element="ns1:getStatistics" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLanguages">
+    <wsdl:part element="ns1:getLanguages" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part element="ns1:Exception" name="Exception"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getStatisticsResponse">
+    <wsdl:part element="ns1:getStatisticsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="System">
+    <wsdl:operation name="getLanguages">
+      <wsdl:input message="ns1:getLanguages" name="getLanguages"></wsdl:input>
+      <wsdl:output message="ns1:getLanguagesResponse" name="getLanguagesResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getInfo">
+      <wsdl:input message="ns1:getInfo" name="getInfo"></wsdl:input>
+      <wsdl:output message="ns1:getInfoResponse" name="getInfoResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getStatistics">
+      <wsdl:input message="ns1:getStatistics" name="getStatistics"></wsdl:input>
+      <wsdl:output message="ns1:getStatisticsResponse" name="getStatisticsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8180/logicaldoc/services/System</con:endpoint></con:endpoints></con:interface>

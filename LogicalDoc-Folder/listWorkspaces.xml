@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="6c46edb9-7096-44df-abde-5befa4f6799f" isOneWay="false" action="" name="listWorkspaces" bindingOperationName="listWorkspaces" type="Request-Response" outputName="listWorkspacesResponse" inputName="listWorkspaces" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="6c46edb9-7096-44df-abde-5befa4f6799ffileName">listWorkspaces</con:setting></con:settings></con:operation>

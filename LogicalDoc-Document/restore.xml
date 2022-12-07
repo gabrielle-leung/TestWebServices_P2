@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="c41657dc-636a-4504-a4d4-825e88f36748" isOneWay="false" action="" name="restore" bindingOperationName="restore" type="Request-Response" outputName="restoreResponse" inputName="restore" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="c41657dc-636a-4504-a4d4-825e88f36748fileName">restore</con:setting></con:settings></con:operation>

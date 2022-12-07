@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="74979fee-705b-4195-a7ff-e531a5637962" wsaVersion="NONE" name="LogicalDoc-Tag" type="wsdl" bindingName="{http://endpoint.soap.webservice.logicaldoc.com/}SoapTagServiceServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8180/logicaldoc/services/Tag?wsdl" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="74979fee-705b-4195-a7ff-e531a5637962fileName">LogicalDoc-Tag</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://localhost:8180/logicaldoc/services/Tag?wsdl"><con:part><con:url>http://localhost:8180/logicaldoc/services/Tag?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="SoapTagServiceService" targetNamespace="http://endpoint.soap.webservice.logicaldoc.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://endpoint.soap.webservice.logicaldoc.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://ws.logicaldoc.com">
+  <wsdl:import location="http://localhost:8180/logicaldoc/services/Tag?wsdl=Tag.wsdl" namespace="http://ws.logicaldoc.com"></wsdl:import>
+  <wsdl:binding name="SoapTagServiceServiceSoapBinding" type="ns1:Tag">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="setFolderTags">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setFolderTags">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setFolderTagsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTagCloud">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getTagCloud">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getTagCloudResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addDocumentTags">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addDocumentTags">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addDocumentTagsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="findDocumentsByTag">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="findDocumentsByTag">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findDocumentsByTagResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="findFoldersByTag">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="findFoldersByTag">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findFoldersByTagResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getFolderTags">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getFolderTags">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getFolderTagsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentTags">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getDocumentTags">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDocumentTagsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTags">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getTags">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getTagsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setDocumentTags">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setDocumentTags">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setDocumentTagsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTagsPreset">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getTagsPreset">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getTagsPresetResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addFolderTags">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addFolderTags">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addFolderTagsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SoapTagServiceService">
+    <wsdl:port binding="tns:SoapTagServiceServiceSoapBinding" name="SoapTagServicePort">
+      <soap:address location="http://localhost:8180/logicaldoc/services/Tag"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8180/logicaldoc/services/Tag?wsdl=Tag.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="Tag" targetNamespace="http://ws.logicaldoc.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://ws.logicaldoc.com">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.logicaldoc.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.logicaldoc.com">
+      <xs:element name="addDocumentTags" type="tns:addDocumentTags"/>
+      <xs:element name="addDocumentTagsResponse" type="tns:addDocumentTagsResponse"/>
+      <xs:element name="addFolderTags" type="tns:addFolderTags"/>
+      <xs:element name="addFolderTagsResponse" type="tns:addFolderTagsResponse"/>
+      <xs:element name="attribute" type="tns:WSAttribute"/>
+      <xs:element name="document" type="tns:WSDocument"/>
+      <xs:element name="findDocumentsByTag" type="tns:findDocumentsByTag"/>
+      <xs:element name="findDocumentsByTagResponse" type="tns:findDocumentsByTagResponse"/>
+      <xs:element name="findFoldersByTag" type="tns:findFoldersByTag"/>
+      <xs:element name="findFoldersByTagResponse" type="tns:findFoldersByTagResponse"/>
+      <xs:element name="folder" type="tns:WSFolder"/>
+      <xs:element name="getDocumentTags" type="tns:getDocumentTags"/>
+      <xs:element name="getDocumentTagsResponse" type="tns:getDocumentTagsResponse"/>
+      <xs:element name="getFolderTags" type="tns:getFolderTags"/>
+      <xs:element name="getFolderTagsResponse" type="tns:getFolderTagsResponse"/>
+      <xs:element name="getTagCloud" type="tns:getTagCloud"/>
+      <xs:element name="getTagCloudResponse" type="tns:getTagCloudResponse"/>
+      <xs:element name="getTags" type="tns:getTags"/>
+      <xs:element name="getTagsPreset" type="tns:getTagsPreset"/>
+      <xs:element name="getTagsPresetResponse" type="tns:getTagsPresetResponse"/>
+      <xs:element name="getTagsResponse" type="tns:getTagsResponse"/>
+      <xs:element name="setDocumentTags" type="tns:setDocumentTags"/>
+      <xs:element name="setDocumentTagsResponse" type="tns:setDocumentTagsResponse"/>
+      <xs:element name="setFolderTags" type="tns:setFolderTags"/>
+      <xs:element name="setFolderTagsResponse" type="tns:setFolderTagsResponse"/>
+      <xs:complexType name="setFolderTags">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="folderId" type="xs:long"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setFolderTagsResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="getTagCloud">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTagCloudResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tagCloud" type="tns:WSTagCloud"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSTagCloud">
+        <xs:sequence>
+          <xs:element name="count" type="xs:long"/>
+          <xs:element name="scale" type="xs:int"/>
+          <xs:element minOccurs="0" name="tag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="addDocumentTags">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="docId" type="xs:long"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="addDocumentTagsResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="findDocumentsByTag">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element minOccurs="0" name="tag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findDocumentsByTagResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="document" type="tns:WSDocument"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSDocument">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="attributes" nillable="true" type="tns:WSAttribute"/>
+          <xs:element minOccurs="0" name="comment" type="xs:string"/>
+          <xs:element minOccurs="0" name="creation" type="xs:string"/>
+          <xs:element minOccurs="0" name="creator" type="xs:string"/>
+          <xs:element name="creatorId" type="xs:long"/>
+          <xs:element minOccurs="0" name="customId" type="xs:string"/>
+          <xs:element minOccurs="0" name="date" type="xs:string"/>
+          <xs:element minOccurs="0" name="deleteUserId" type="xs:long"/>
+          <xs:element minOccurs="0" name="digest" type="xs:string"/>
+          <xs:element minOccurs="0" name="docRef" type="xs:long"/>
+          <xs:element minOccurs="0" name="docRefType" type="xs:string"/>
+          <xs:element minOccurs="0" name="exportId" type="xs:long"/>
+          <xs:element minOccurs="0" name="exportName" type="xs:string"/>
+          <xs:element name="exportStatus" type="xs:int"/>
+          <xs:element minOccurs="0" name="fileName" type="xs:string"/>
+          <xs:element name="fileSize" type="xs:long"/>
+          <xs:element minOccurs="0" name="fileVersion" type="xs:string"/>
+          <xs:element minOccurs="0" name="folderId" type="xs:long"/>
+          <xs:element minOccurs="0" name="formId" type="xs:long"/>
+          <xs:element minOccurs="0" name="icon" type="xs:string"/>
+          <xs:element name="id" type="xs:long"/>
+          <xs:element name="immutable" type="xs:int"/>
+          <xs:element name="indexed" type="xs:int"/>
+          <xs:element minOccurs="0" name="language" type="xs:string"/>
+          <xs:element minOccurs="0" name="lastModified" type="xs:string"/>
+          <xs:element minOccurs="0" name="lockUserId" type="xs:long"/>
+          <xs:element name="nature" type="xs:int"/>
+          <xs:element name="pages" type="xs:int"/>
+          <xs:element minOccurs="0" name="passwordProtected" type="xs:int"/>
+          <xs:element name="published" type="xs:int"/>
+          <xs:element minOccurs="0" name="publisher" type="xs:string"/>
+          <xs:element name="publisherId" type="xs:long"/>
+          <xs:element minOccurs="0" name="rating" type="xs:int"/>
+          <xs:element minOccurs="0" name="score" type="xs:int"/>
+          <xs:element name="signed" type="xs:int"/>
+          <xs:element name="stamped" type="xs:int"/>
+          <xs:element minOccurs="0" name="startPublishing" type="xs:string"/>
+          <xs:element name="status" type="xs:int"/>
+          <xs:element minOccurs="0" name="stopPublishing" type="xs:string"/>
+          <xs:element minOccurs="0" name="summary" type="xs:string"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tags" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="templateId" type="xs:long"/>
+          <xs:element minOccurs="0" name="type" type="xs:string"/>
+          <xs:element minOccurs="0" name="version" type="xs:string"/>
+          <xs:element minOccurs="0" name="workflowStatus" type="xs:string"/>
+          <xs:element minOccurs="0" name="workflowStatusDisplay" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSAttribute">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dateValue" type="xs:string"/>
+          <xs:element minOccurs="0" name="doubleValue" type="xs:double"/>
+          <xs:element name="editor" type="xs:int"/>
+          <xs:element name="hidden" type="xs:int"/>
+          <xs:element minOccurs="0" name="intValue" type="xs:long"/>
+          <xs:element minOccurs="0" name="label" type="xs:string"/>
+          <xs:element name="mandatory" type="xs:int"/>
+          <xs:element name="multiple" type="xs:int"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="parent" type="xs:string"/>
+          <xs:element name="position" type="xs:int"/>
+          <xs:element minOccurs="0" name="setId" type="xs:long"/>
+          <xs:element minOccurs="0" name="stringValue" type="xs:string"/>
+          <xs:element minOccurs="0" name="stringValues" type="xs:string"/>
+          <xs:element name="type" type="xs:int"/>
+          <xs:element minOccurs="0" name="value" type="xs:anyType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findFoldersByTag">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element minOccurs="0" name="tag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findFoldersByTagResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="folder" type="tns:WSFolder"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSFolder">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="attributes" nillable="true" type="tns:WSAttribute"/>
+          <xs:element minOccurs="0" name="creation" type="xs:string"/>
+          <xs:element minOccurs="0" name="creator" type="xs:string"/>
+          <xs:element minOccurs="0" name="description" type="xs:string"/>
+          <xs:element minOccurs="0" name="foldRef" type="xs:long"/>
+          <xs:element name="hidden" type="xs:int"/>
+          <xs:element name="id" type="xs:long"/>
+          <xs:element minOccurs="0" name="lastModified" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element name="parentId" type="xs:long"/>
+          <xs:element name="position" type="xs:int"/>
+          <xs:element minOccurs="0" name="securityRef" type="xs:long"/>
+          <xs:element minOccurs="0" name="storage" type="xs:int"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tags" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="templateId" type="xs:long"/>
+          <xs:element name="templateLocked" type="xs:int"/>
+          <xs:element name="type" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getFolderTags">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="folderId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getFolderTagsResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocumentTags">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="docId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocumentTagsResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTags">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTagsResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setDocumentTags">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="docId" type="xs:long"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setDocumentTagsResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="getTagsPreset">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTagsPresetResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="addFolderTags">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="folderId" type="xs:long"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="addFolderTagsResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:element name="Exception" type="tns:Exception"/>
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="setFolderTags">
+    <wsdl:part element="ns1:setFolderTags" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTagCloudResponse">
+    <wsdl:part element="ns1:getTagCloudResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addDocumentTagsResponse">
+    <wsdl:part element="ns1:addDocumentTagsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addDocumentTags">
+    <wsdl:part element="ns1:addDocumentTags" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTagsResponse">
+    <wsdl:part element="ns1:getTagsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addFolderTagsResponse">
+    <wsdl:part element="ns1:addFolderTagsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDocumentTags">
+    <wsdl:part element="ns1:getDocumentTags" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTags">
+    <wsdl:part element="ns1:getTags" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part element="ns1:Exception" name="Exception"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTagsPresetResponse">
+    <wsdl:part element="ns1:getTagsPresetResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTagCloud">
+    <wsdl:part element="ns1:getTagCloud" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getFolderTagsResponse">
+    <wsdl:part element="ns1:getFolderTagsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="findDocumentsByTag">
+    <wsdl:part element="ns1:findDocumentsByTag" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="findFoldersByTagResponse">
+    <wsdl:part element="ns1:findFoldersByTagResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="findDocumentsByTagResponse">
+    <wsdl:part element="ns1:findDocumentsByTagResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="findFoldersByTag">
+    <wsdl:part element="ns1:findFoldersByTag" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getFolderTags">
+    <wsdl:part element="ns1:getFolderTags" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setDocumentTags">
+    <wsdl:part element="ns1:setDocumentTags" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTagsPreset">
+    <wsdl:part element="ns1:getTagsPreset" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDocumentTagsResponse">
+    <wsdl:part element="ns1:getDocumentTagsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setDocumentTagsResponse">
+    <wsdl:part element="ns1:setDocumentTagsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addFolderTags">
+    <wsdl:part element="ns1:addFolderTags" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setFolderTagsResponse">
+    <wsdl:part element="ns1:setFolderTagsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Tag">
+    <wsdl:operation name="setFolderTags">
+      <wsdl:input message="ns1:setFolderTags" name="setFolderTags"></wsdl:input>
+      <wsdl:output message="ns1:setFolderTagsResponse" name="setFolderTagsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTagCloud">
+      <wsdl:input message="ns1:getTagCloud" name="getTagCloud"></wsdl:input>
+      <wsdl:output message="ns1:getTagCloudResponse" name="getTagCloudResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addDocumentTags">
+      <wsdl:input message="ns1:addDocumentTags" name="addDocumentTags"></wsdl:input>
+      <wsdl:output message="ns1:addDocumentTagsResponse" name="addDocumentTagsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="findDocumentsByTag">
+      <wsdl:input message="ns1:findDocumentsByTag" name="findDocumentsByTag"></wsdl:input>
+      <wsdl:output message="ns1:findDocumentsByTagResponse" name="findDocumentsByTagResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="findFoldersByTag">
+      <wsdl:input message="ns1:findFoldersByTag" name="findFoldersByTag"></wsdl:input>
+      <wsdl:output message="ns1:findFoldersByTagResponse" name="findFoldersByTagResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getFolderTags">
+      <wsdl:input message="ns1:getFolderTags" name="getFolderTags"></wsdl:input>
+      <wsdl:output message="ns1:getFolderTagsResponse" name="getFolderTagsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentTags">
+      <wsdl:input message="ns1:getDocumentTags" name="getDocumentTags"></wsdl:input>
+      <wsdl:output message="ns1:getDocumentTagsResponse" name="getDocumentTagsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTags">
+      <wsdl:input message="ns1:getTags" name="getTags"></wsdl:input>
+      <wsdl:output message="ns1:getTagsResponse" name="getTagsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setDocumentTags">
+      <wsdl:input message="ns1:setDocumentTags" name="setDocumentTags"></wsdl:input>
+      <wsdl:output message="ns1:setDocumentTagsResponse" name="setDocumentTagsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTagsPreset">
+      <wsdl:input message="ns1:getTagsPreset" name="getTagsPreset"></wsdl:input>
+      <wsdl:output message="ns1:getTagsPresetResponse" name="getTagsPresetResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addFolderTags">
+      <wsdl:input message="ns1:addFolderTags" name="addFolderTags"></wsdl:input>
+      <wsdl:output message="ns1:addFolderTagsResponse" name="addFolderTagsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8180/logicaldoc/services/Tag</con:endpoint></con:endpoints></con:interface>

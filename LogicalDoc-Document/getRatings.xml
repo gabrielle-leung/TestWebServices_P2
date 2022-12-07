@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="6896ad16-7b5b-44f0-b838-81bfe19b5f5e" isOneWay="false" action="" name="getRatings" bindingOperationName="getRatings" type="Request-Response" outputName="getRatingsResponse" inputName="getRatings" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="6896ad16-7b5b-44f0-b838-81bfe19b5f5efileName">getRatings</con:setting></con:settings></con:operation>

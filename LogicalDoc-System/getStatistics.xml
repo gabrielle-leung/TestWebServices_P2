@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="6738358e-0f51-4505-af64-3a9c5a064e25" isOneWay="false" action="" name="getStatistics" bindingOperationName="getStatistics" type="Request-Response" outputName="getStatisticsResponse" inputName="getStatistics" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="6738358e-0f51-4505-af64-3a9c5a064e25fileName">getStatistics</con:setting></con:settings></con:operation>

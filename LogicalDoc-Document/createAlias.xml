@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="c49eee96-c27b-4c90-9509-08acffafd3be" isOneWay="false" action="" name="createAlias" bindingOperationName="createAlias" type="Request-Response" outputName="createAliasResponse" inputName="createAlias" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="c49eee96-c27b-4c90-9509-08acffafd3befileName">createAlias</con:setting></con:settings></con:operation>

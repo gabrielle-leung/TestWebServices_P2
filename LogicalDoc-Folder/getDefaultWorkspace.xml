@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="18cd631e-cb16-4a4f-b187-ebe84ac7ebbc" isOneWay="false" action="" name="getDefaultWorkspace" bindingOperationName="getDefaultWorkspace" type="Request-Response" outputName="getDefaultWorkspaceResponse" inputName="getDefaultWorkspace" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="18cd631e-cb16-4a4f-b187-ebe84ac7ebbcfileName">getDefaultWorkspace</con:setting></con:settings></con:operation>

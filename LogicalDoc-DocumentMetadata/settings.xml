@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="1c724d6c-2425-40d8-84b0-2baff3bef7a8" wsaVersion="NONE" name="LogicalDoc-DocumentMetadata" type="wsdl" bindingName="{http://endpoint.soap.webservice.logicaldoc.com/}SoapDocumentMetadataServiceServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8180/logicaldoc/services/DocumentMetadata?wsdl" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="1c724d6c-2425-40d8-84b0-2baff3bef7a8fileName">LogicalDoc-DocumentMetadata</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://localhost:8180/logicaldoc/services/DocumentMetadata?wsdl"><con:part><con:url>http://localhost:8180/logicaldoc/services/DocumentMetadata?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="SoapDocumentMetadataServiceService" targetNamespace="http://endpoint.soap.webservice.logicaldoc.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://endpoint.soap.webservice.logicaldoc.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://ws.logicaldoc.com">
+  <wsdl:import location="http://localhost:8180/logicaldoc/services/DocumentMetadata?wsdl=DocumentMetadata.wsdl" namespace="http://ws.logicaldoc.com"></wsdl:import>
+  <wsdl:binding name="SoapDocumentMetadataServiceServiceSoapBinding" type="ns1:DocumentMetadata">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="listAttributeSets">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="listAttributeSets">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listAttributeSetsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="listTemplates">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="listTemplates">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listTemplatesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTemplate">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getTemplate">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getTemplateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAttributeSet">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAttributeSet">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAttributeSetResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAttributeOptions">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAttributeOptions">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAttributeOptionsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAttributeSet">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteAttributeSet">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteAttributeSetResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setAttributeOptions">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setAttributeOptions">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setAttributeOptionsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeAttributeSet">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="storeAttributeSet">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="storeAttributeSetResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeTemplate">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="storeTemplate">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="storeTemplateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteTemplate">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteTemplate">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteTemplateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAttributeSetById">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAttributeSetById">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAttributeSetByIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTemplateById">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getTemplateById">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getTemplateByIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SoapDocumentMetadataServiceService">
+    <wsdl:port binding="tns:SoapDocumentMetadataServiceServiceSoapBinding" name="SoapDocumentMetadataServicePort">
+      <soap:address location="http://localhost:8180/logicaldoc/services/DocumentMetadata"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8180/logicaldoc/services/DocumentMetadata?wsdl=DocumentMetadata.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="DocumentMetadata" targetNamespace="http://ws.logicaldoc.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://ws.logicaldoc.com">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.logicaldoc.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.logicaldoc.com">
+      <xs:element name="attribute" type="tns:WSAttribute"/>
+      <xs:element name="attributeSet" type="tns:WSAttributeSet"/>
+      <xs:element name="deleteAttributeSet" type="tns:deleteAttributeSet"/>
+      <xs:element name="deleteAttributeSetResponse" type="tns:deleteAttributeSetResponse"/>
+      <xs:element name="deleteTemplate" type="tns:deleteTemplate"/>
+      <xs:element name="deleteTemplateResponse" type="tns:deleteTemplateResponse"/>
+      <xs:element name="getAttributeOptions" type="tns:getAttributeOptions"/>
+      <xs:element name="getAttributeOptionsResponse" type="tns:getAttributeOptionsResponse"/>
+      <xs:element name="getAttributeSet" type="tns:getAttributeSet"/>
+      <xs:element name="getAttributeSetById" type="tns:getAttributeSetById"/>
+      <xs:element name="getAttributeSetByIdResponse" type="tns:getAttributeSetByIdResponse"/>
+      <xs:element name="getAttributeSetResponse" type="tns:getAttributeSetResponse"/>
+      <xs:element name="getTemplate" type="tns:getTemplate"/>
+      <xs:element name="getTemplateById" type="tns:getTemplateById"/>
+      <xs:element name="getTemplateByIdResponse" type="tns:getTemplateByIdResponse"/>
+      <xs:element name="getTemplateResponse" type="tns:getTemplateResponse"/>
+      <xs:element name="listAttributeSets" type="tns:listAttributeSets"/>
+      <xs:element name="listAttributeSetsResponse" type="tns:listAttributeSetsResponse"/>
+      <xs:element name="listTemplates" type="tns:listTemplates"/>
+      <xs:element name="listTemplatesResponse" type="tns:listTemplatesResponse"/>
+      <xs:element name="setAttributeOptions" type="tns:setAttributeOptions"/>
+      <xs:element name="setAttributeOptionsResponse" type="tns:setAttributeOptionsResponse"/>
+      <xs:element name="storeAttributeSet" type="tns:storeAttributeSet"/>
+      <xs:element name="storeAttributeSetResponse" type="tns:storeAttributeSetResponse"/>
+      <xs:element name="storeTemplate" type="tns:storeTemplate"/>
+      <xs:element name="storeTemplateResponse" type="tns:storeTemplateResponse"/>
+      <xs:element name="template" type="tns:WSTemplate"/>
+      <xs:complexType name="listAttributeSets">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listAttributeSetsResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="attributeSet" type="tns:WSAttributeSet"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSAttributeSet">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="attributes" nillable="true" type="tns:WSAttribute"/>
+          <xs:element minOccurs="0" name="description" type="xs:string"/>
+          <xs:element name="id" type="xs:long"/>
+          <xs:element minOccurs="0" name="lastModified" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSAttribute">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dateValue" type="xs:string"/>
+          <xs:element minOccurs="0" name="doubleValue" type="xs:double"/>
+          <xs:element name="editor" type="xs:int"/>
+          <xs:element name="hidden" type="xs:int"/>
+          <xs:element minOccurs="0" name="intValue" type="xs:long"/>
+          <xs:element minOccurs="0" name="label" type="xs:string"/>
+          <xs:element name="mandatory" type="xs:int"/>
+          <xs:element name="multiple" type="xs:int"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="parent" type="xs:string"/>
+          <xs:element name="position" type="xs:int"/>
+          <xs:element minOccurs="0" name="setId" type="xs:long"/>
+          <xs:element minOccurs="0" name="stringValue" type="xs:string"/>
+          <xs:element minOccurs="0" name="stringValues" type="xs:string"/>
+          <xs:element name="type" type="xs:int"/>
+          <xs:element minOccurs="0" name="value" type="xs:anyType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listTemplates">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listTemplatesResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="template" type="tns:WSTemplate"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSTemplate">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="attributes" nillable="true" type="tns:WSAttribute"/>
+          <xs:element minOccurs="0" name="description" type="xs:string"/>
+          <xs:element name="docsCount" type="xs:int"/>
+          <xs:element name="id" type="xs:long"/>
+          <xs:element minOccurs="0" name="lastModified" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTemplate">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTemplateResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="template" type="tns:WSTemplate"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAttributeSet">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAttributeSetResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="attributeSet" type="tns:WSAttributeSet"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAttributeOptions">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="setId" type="xs:long"/>
+          <xs:element minOccurs="0" name="attribute" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAttributeOptionsResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteAttributeSet">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="setId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteAttributeSetResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="setAttributeOptions">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="setId" type="xs:long"/>
+          <xs:element minOccurs="0" name="attribute" type="xs:string"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="values" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setAttributeOptionsResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="storeAttributeSet">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element minOccurs="0" name="attributeSet" type="tns:WSAttributeSet"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="storeAttributeSetResponse">
+        <xs:sequence>
+          <xs:element name="setId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="storeTemplate">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element minOccurs="0" name="template" type="tns:WSTemplate"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="storeTemplateResponse">
+        <xs:sequence>
+          <xs:element name="templateId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteTemplate">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="templateId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteTemplateResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="getAttributeSetById">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="setId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAttributeSetByIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="attributeSet" type="tns:WSAttributeSet"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTemplateById">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sid" type="xs:string"/>
+          <xs:element name="templateId" type="xs:long"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTemplateByIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="template" type="tns:WSTemplate"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Exception" type="tns:Exception"/>
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="listAttributeSets">
+    <wsdl:part element="ns1:listAttributeSets" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listTemplates">
+    <wsdl:part element="ns1:listTemplates" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAttributeSet">
+    <wsdl:part element="ns1:getAttributeSet" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTemplateByIdResponse">
+    <wsdl:part element="ns1:getTemplateByIdResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteAttributeSet">
+    <wsdl:part element="ns1:deleteAttributeSet" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listAttributeSetsResponse">
+    <wsdl:part element="ns1:listAttributeSetsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteAttributeSetResponse">
+    <wsdl:part element="ns1:deleteAttributeSetResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAttributeSetResponse">
+    <wsdl:part element="ns1:getAttributeSetResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setAttributeOptions">
+    <wsdl:part element="ns1:setAttributeOptions" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="storeAttributeSet">
+    <wsdl:part element="ns1:storeAttributeSet" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="storeTemplateResponse">
+    <wsdl:part element="ns1:storeTemplateResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listTemplatesResponse">
+    <wsdl:part element="ns1:listTemplatesResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAttributeOptionsResponse">
+    <wsdl:part element="ns1:getAttributeOptionsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteTemplate">
+    <wsdl:part element="ns1:deleteTemplate" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTemplateById">
+    <wsdl:part element="ns1:getTemplateById" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTemplateResponse">
+    <wsdl:part element="ns1:getTemplateResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTemplate">
+    <wsdl:part element="ns1:getTemplate" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setAttributeOptionsResponse">
+    <wsdl:part element="ns1:setAttributeOptionsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAttributeSetByIdResponse">
+    <wsdl:part element="ns1:getAttributeSetByIdResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAttributeOptions">
+    <wsdl:part element="ns1:getAttributeOptions" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part element="ns1:Exception" name="Exception"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteTemplateResponse">
+    <wsdl:part element="ns1:deleteTemplateResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="storeTemplate">
+    <wsdl:part element="ns1:storeTemplate" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="storeAttributeSetResponse">
+    <wsdl:part element="ns1:storeAttributeSetResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAttributeSetById">
+    <wsdl:part element="ns1:getAttributeSetById" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="DocumentMetadata">
+    <wsdl:operation name="listAttributeSets">
+      <wsdl:input message="ns1:listAttributeSets" name="listAttributeSets"></wsdl:input>
+      <wsdl:output message="ns1:listAttributeSetsResponse" name="listAttributeSetsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="listTemplates">
+      <wsdl:input message="ns1:listTemplates" name="listTemplates"></wsdl:input>
+      <wsdl:output message="ns1:listTemplatesResponse" name="listTemplatesResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTemplate">
+      <wsdl:input message="ns1:getTemplate" name="getTemplate"></wsdl:input>
+      <wsdl:output message="ns1:getTemplateResponse" name="getTemplateResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAttributeSet">
+      <wsdl:input message="ns1:getAttributeSet" name="getAttributeSet"></wsdl:input>
+      <wsdl:output message="ns1:getAttributeSetResponse" name="getAttributeSetResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAttributeOptions">
+      <wsdl:input message="ns1:getAttributeOptions" name="getAttributeOptions"></wsdl:input>
+      <wsdl:output message="ns1:getAttributeOptionsResponse" name="getAttributeOptionsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAttributeSet">
+      <wsdl:input message="ns1:deleteAttributeSet" name="deleteAttributeSet"></wsdl:input>
+      <wsdl:output message="ns1:deleteAttributeSetResponse" name="deleteAttributeSetResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setAttributeOptions">
+      <wsdl:input message="ns1:setAttributeOptions" name="setAttributeOptions"></wsdl:input>
+      <wsdl:output message="ns1:setAttributeOptionsResponse" name="setAttributeOptionsResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeAttributeSet">
+      <wsdl:input message="ns1:storeAttributeSet" name="storeAttributeSet"></wsdl:input>
+      <wsdl:output message="ns1:storeAttributeSetResponse" name="storeAttributeSetResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeTemplate">
+      <wsdl:input message="ns1:storeTemplate" name="storeTemplate"></wsdl:input>
+      <wsdl:output message="ns1:storeTemplateResponse" name="storeTemplateResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteTemplate">
+      <wsdl:input message="ns1:deleteTemplate" name="deleteTemplate"></wsdl:input>
+      <wsdl:output message="ns1:deleteTemplateResponse" name="deleteTemplateResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAttributeSetById">
+      <wsdl:input message="ns1:getAttributeSetById" name="getAttributeSetById"></wsdl:input>
+      <wsdl:output message="ns1:getAttributeSetByIdResponse" name="getAttributeSetByIdResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTemplateById">
+      <wsdl:input message="ns1:getTemplateById" name="getTemplateById"></wsdl:input>
+      <wsdl:output message="ns1:getTemplateByIdResponse" name="getTemplateByIdResponse"></wsdl:output>
+      <wsdl:fault message="ns1:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8180/logicaldoc/services/DocumentMetadata</con:endpoint></con:endpoints></con:interface>

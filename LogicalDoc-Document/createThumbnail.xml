@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="a56ad785-cb9a-439e-92ff-de69ec85c814" isOneWay="false" action="" name="createThumbnail" bindingOperationName="createThumbnail" type="Request-Response" outputName="createThumbnailResponse" inputName="createThumbnail" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a56ad785-cb9a-439e-92ff-de69ec85c814fileName">createThumbnail</con:setting></con:settings></con:operation>

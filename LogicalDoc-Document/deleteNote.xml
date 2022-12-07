@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5c106ed5-8c21-43d3-bd60-a2793cf6e91b" isOneWay="false" action="" name="deleteNote" bindingOperationName="deleteNote" type="Request-Response" outputName="deleteNoteResponse" inputName="deleteNote" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5c106ed5-8c21-43d3-bd60-a2793cf6e91bfileName">deleteNote</con:setting></con:settings></con:operation>

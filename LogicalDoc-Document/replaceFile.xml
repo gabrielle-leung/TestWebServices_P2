@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5c4671ea-0523-4a80-a90f-29a8a55308b3" isOneWay="false" action="" name="replaceFile" bindingOperationName="replaceFile" type="Request-Response" outputName="replaceFileResponse" inputName="replaceFile" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5c4671ea-0523-4a80-a90f-29a8a55308b3fileName">replaceFile</con:setting></con:settings></con:operation>

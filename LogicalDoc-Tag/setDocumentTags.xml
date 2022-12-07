@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="9e001cdc-e025-4f86-b9cb-0f84409b1069" isOneWay="false" action="" name="setDocumentTags" bindingOperationName="setDocumentTags" type="Request-Response" outputName="setDocumentTagsResponse" inputName="setDocumentTags" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="9e001cdc-e025-4f86-b9cb-0f84409b1069fileName">setDocumentTags</con:setting></con:settings></con:operation>

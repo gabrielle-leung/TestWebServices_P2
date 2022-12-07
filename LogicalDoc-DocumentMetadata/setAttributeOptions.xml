@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5aee0426-6cb7-4006-83b0-3e74a550bcb7" isOneWay="false" action="" name="setAttributeOptions" bindingOperationName="setAttributeOptions" type="Request-Response" outputName="setAttributeOptionsResponse" inputName="setAttributeOptions" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5aee0426-6cb7-4006-83b0-3e74a550bcb7fileName">setAttributeOptions</con:setting></con:settings></con:operation>

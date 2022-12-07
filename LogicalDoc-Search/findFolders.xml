@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="58ebcdff-f925-4a9a-9c95-1ef1b1131f44" isOneWay="false" action="" name="findFolders" bindingOperationName="findFolders" type="Request-Response" outputName="findFoldersResponse" inputName="findFolders" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="58ebcdff-f925-4a9a-9c95-1ef1b1131f44fileName">findFolders</con:setting></con:settings></con:operation>

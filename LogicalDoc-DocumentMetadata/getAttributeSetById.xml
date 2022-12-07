@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5fb79053-057d-4a59-929b-3853c8f9ac7e" isOneWay="false" action="" name="getAttributeSetById" bindingOperationName="getAttributeSetById" type="Request-Response" outputName="getAttributeSetByIdResponse" inputName="getAttributeSetById" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5fb79053-057d-4a59-929b-3853c8f9ac7efileName">getAttributeSetById</con:setting></con:settings></con:operation>

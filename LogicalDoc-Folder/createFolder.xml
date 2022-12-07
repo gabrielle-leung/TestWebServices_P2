@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="129f4bb3-471a-4f1f-8281-d725d2cd4339" isOneWay="false" action="" name="createFolder" bindingOperationName="createFolder" type="Request-Response" outputName="createFolderResponse" inputName="createFolder" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="129f4bb3-471a-4f1f-8281-d725d2cd4339fileName">createFolder</con:setting></con:settings><con:call id="bd57621b-7748-467d-af45-496b4a82e5a1" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8180/logicaldoc/services/Folder</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:createFolder>
+         <!--Optional:-->
+         <sid>?</sid>
+         <parentId>?</parentId>
+         <!--Optional:-->
+         <name>?</name>
+      </ws:createFolder>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Folder/createFolder"/><con:wsrmConfig version="1.2"/></con:call></con:operation>

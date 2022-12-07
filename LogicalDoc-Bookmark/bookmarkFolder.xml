@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="c0361db8-56dc-4acb-b976-56fb20b5ca41" isOneWay="false" action="" name="bookmarkFolder" bindingOperationName="bookmarkFolder" type="Request-Response" outputName="bookmarkFolderResponse" inputName="bookmarkFolder" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="c0361db8-56dc-4acb-b976-56fb20b5ca41fileName">bookmarkFolder</con:setting></con:settings></con:operation>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="25c5e463-c473-472e-8a0f-e1648e596535" isOneWay="false" action="" name="getNotes" bindingOperationName="getNotes" type="Request-Response" outputName="getNotesResponse" inputName="getNotes" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="25c5e463-c473-472e-8a0f-e1648e596535fileName">getNotes</con:setting></con:settings></con:operation>

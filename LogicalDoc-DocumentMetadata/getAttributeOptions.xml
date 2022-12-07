@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b25921b6-ec1d-461c-bb8d-674c2181d05a" isOneWay="false" action="" name="getAttributeOptions" bindingOperationName="getAttributeOptions" type="Request-Response" outputName="getAttributeOptionsResponse" inputName="getAttributeOptions" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b25921b6-ec1d-461c-bb8d-674c2181d05afileName">getAttributeOptions</con:setting></con:settings></con:operation>

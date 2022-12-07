@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="2dba2d07-d7ac-45a5-8a57-f1a2eaf6ff07" isOneWay="false" action="" name="unlock" bindingOperationName="unlock" type="Request-Response" outputName="unlockResponse" inputName="unlock" receivesAttachments="false" sendsAttachments="false" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="2dba2d07-d7ac-45a5-8a57-f1a2eaf6ff07fileName">unlock</con:setting></con:settings></con:operation>
