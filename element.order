@@ -1,7 +1,4 @@
 LibrePlan
-<<<<<<< Updated upstream
-Test-Suite---Libreplan
-=======
 LogicalDoc-Auth
 LogicalDoc-Bookmark
 LogicalDoc-Document
@@ -12,4 +9,3 @@ LogicalDoc-Security
 LogicalDoc-System
 LogicalDoc-Tag
 Test-Suite-1
->>>>>>> Stashed changes

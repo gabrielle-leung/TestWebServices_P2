@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="144df2ed-02e2-447c-874c-36fe2d124556" isOneWay="false" action="" name="getDocument" bindingOperationName="getDocument" type="Request-Response" outputName="getDocumentResponse" inputName="getDocument" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="144df2ed-02e2-447c-874c-36fe2d124556fileName">getDocument</con:setting></con:settings><con:call id="865e1b38-1a9f-4fb5-8ee8-a0859cd4470a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8180/logicaldoc/services/Document</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <ws:getDocument>\r
-         <!--Optional:-->\r
-         <sid>?</sid>\r
-         <docId>?</docId>\r
-      </ws:getDocument>\r
-   </soapenv:Body>\r
+<con:operation id="144df2ed-02e2-447c-874c-36fe2d124556" isOneWay="false" action="" name="getDocument" bindingOperationName="getDocument" type="Request-Response" outputName="getDocumentResponse" inputName="getDocument" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="144df2ed-02e2-447c-874c-36fe2d124556fileName">getDocument</con:setting></con:settings><con:call id="865e1b38-1a9f-4fb5-8ee8-a0859cd4470a" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8180/logicaldoc/services/Document</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:getDocument>
+         <!--Optional:-->
+         <sid>?</sid>
+         <docId>?</docId>
+      </ws:getDocument>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/getDocument"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
