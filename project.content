@@ -4,9 +4,9 @@ Test-Suite---Libreplan\Test-Case-1---Créer-des-Projets.xml
 Test-Suite---Libreplan\Test-Case-2---Supprimer-des-projets.xml
 Test-Suite---Libreplan\Test-Case-3---Créer-des-ressources.xml
 Test-Suite---Libreplan\Test-Case-4---Supprimer-des-ressources.xml
-Test-Suite---Libreplan\Test-Case-5---Récupérer-un-projet.xml
-Test-Suite---Libreplan\Test-Case-6---Récupérer-tous-les-projets-ATTENTION%3A-retour-incohérent%3F.xml
-Test-Suite---Libreplan\Test-Case-7---Récupérer-un-calendrier.xml
+Test-Suite---Libreplan\Test-Case-5---Récupérer-tous-les-projets.xml
+Test-Suite---Libreplan\Test-Case-6---Récupérer-un-projet.xml
 Test-Suite---Libreplan\Test-Case-8---Récupérer-tous-les-calendriers.xml
+Test-Suite---Libreplan\Test-Case-7---Récupérer-un-calendrier.xml
 Test-Suite---Libreplan\Test-Case-9---Récupérer-une-ressource.xml
 Test-Suite---Libreplan\Test-Case-10---Récupérer-toutes-les-ressources.xml
