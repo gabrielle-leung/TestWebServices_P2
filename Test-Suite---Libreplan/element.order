@@ -6,5 +6,5 @@ Test-Case-5---Récupérer-tous-les-projets.xml
 Test-Case-6---Récupérer-un-projet.xml
 Test-Case-7---Récupérer-tous-les-calendriers.xml
 Test-Case-8---Récupérer-un-calendrier.xml
-Test-Case-9---Récupérer-une-ressource.xml
-Test-Case-10---Récupérer-toutes-les-ressources.xml
+Test-Case-9---Récupérer-toutes-les-ressources.xml
+Test-Case-10---Récupérer-une-ressource.xml

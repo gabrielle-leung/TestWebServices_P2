@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="cf87a048-52bf-4051-9df3-9ac122594749" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 10 - Récupérer toutes les ressources" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="cf87a048-52bf-4051-9df3-9ac122594749fileName">Test-Case-10---Récupérer-toutes-les-ressources</con:setting></con:settings><con:properties/><con:reportParameters/></con:testCase>
