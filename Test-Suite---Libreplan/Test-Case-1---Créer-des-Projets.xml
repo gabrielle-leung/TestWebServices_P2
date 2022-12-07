@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="cd36de78-2251-4360-9a84-4cb95e89d9e8" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 1 - Créer des Projets" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="cd36de78-2251-4360-9a84-4cb95e89d9e8fileName">Test-Case-1---Créer-des-Projets</con:setting></con:settings><con:properties/><con:reportParameters/></con:testCase>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="227ace42-b99b-4016-a629-c6ab5d03954f" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 8 - Récupérer tous les calendriers" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="227ace42-b99b-4016-a629-c6ab5d03954ffileName">Test-Case-8---Récupérer-tous-les-calendriers</con:setting></con:settings><con:properties/><con:reportParameters/></con:testCase>

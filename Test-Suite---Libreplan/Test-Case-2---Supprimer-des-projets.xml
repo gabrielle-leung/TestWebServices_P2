@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="dce8419a-83d4-423b-9502-92bbcca0a5d7" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 2 - Supprimer des projets" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="dce8419a-83d4-423b-9502-92bbcca0a5d7fileName">Test-Case-2---Supprimer-des-projets</con:setting></con:settings><con:properties/><con:reportParameters/></con:testCase>
