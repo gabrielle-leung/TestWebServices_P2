@@ -1,9 +1,9 @@
 Test-Case-1---Créer-des-Projets.xml
 Test-Case-2---Supprimer-des-projets.xml
-Test-Case-6---Récupérer-un-projet.xml
 Test-Case-3---Créer-des-ressources.xml
 Test-Case-4---Supprimer-des-ressources.xml
 Test-Case-5---Récupérer-tous-les-projets.xml
+Test-Case-6---Récupérer-un-projet.xml
 Test-Case-7---Récupérer-tous-les-calendriers.xml
 Test-Case-8---Récupérer-un-calendrier.xml
 Test-Case-9---Récupérer-toutes-les-ressources.xml
