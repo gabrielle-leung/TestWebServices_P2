@@ -1,0 +1,4 @@
+TC006---Récupérer-toutes-les-ressources.xml
+TC007---Récupérer-une-ressource-spécifique.xml
+TC008---Créer-une-ressource-%3E-Vérifier-sa-Création-%28%3E-PROBLEME-%3A-suppression-impossible-cf.-Documentation%29.xml
+TC009---Supprimer-des-ressources-%28IMPOSSIBLE-cf.-Documentation%29.xml
