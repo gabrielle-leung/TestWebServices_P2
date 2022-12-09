@@ -1,0 +1,5 @@
+TC000.1.1---Cas-non-passant---GET-sans-être-authentifié-%3E-Attendu-%3A-réponse-HTTP-401.xml
+TC000.1.2---Cas-non-passant---POST-en-tant-que-Reader-et-non-Writer-%3E-Attendu-%3A-réponse-HTTP-403.xml
+TC000.2.1---Cas-passant---GET-tous-les-projets-authentifié-comme-Reader-%3E-Attendu-%3A-réponse-HTTP-200-%2B-projets-contenus.xml
+TC000.2.2---Cas-passant---GET-tous-les-projets-authentifié-comme-Writer-%3E-Attendu-%3A-réponse-HTTP-200-%2B-projets-contenus.xml
+TC000.2.3---Cas-passant---POST-en-tant-que-Writer-%3E-Attendu-%3A-réponse-HTTP-201-%2B-entité-créée.xml

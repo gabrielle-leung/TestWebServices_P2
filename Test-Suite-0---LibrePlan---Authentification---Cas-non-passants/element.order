@@ -1,2 +1,0 @@
-TC000.1---Cas-non-passant---GET-sans-être-authentifié-%3E-Attendu-%3A-réponse-HTTP-401.xml
-TC000.2---Cas-non-passants---POST-en-tant-que-Reader-et-non-Writer-%3E-Attendu-%3A-réponse-HTTP-403.xml
