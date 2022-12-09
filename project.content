@@ -2,8 +2,14 @@ LibrePlan\%3Cservice-path%3E.xml
 LibrePlan\Special-URL-for-work-report-lines-%3Centity-code%3E.xml
 Security-TC000.1---Work-In-Progress-for-P.O.C..xml
 Security-TC000.2---Work-In-Progress-for-P.O.C..xml
-Test-Suite-0---LibrePlan---Authentification---Cas-non-passants\TC000.1---Cas-non-passant---GET-sans-être-authentifié-%3E-Attendu-%3A-réponse-HTTP-401.xml
-Test-Suite-0---LibrePlan---Authentification---Cas-non-passants\TC000.2---Cas-non-passants---POST-en-tant-que-Reader-et-non-Writer-%3E-Attendu-%3A-réponse-HTTP-403.xml
+Security-TC000.1---Work-In-Progress-for-P.O.C.-3.xml
+Security-TC000.1---Work-In-Progress-for-P.O.C.-1.xml
+Security-TC000.2---Work-In-Progress-for-P.O.C.-2.xml
+Test-Suite-0---LibrePlan---Authentification---Cas-non-passants-et-Cas-passants\TC000.1.1---Cas-non-passant---GET-sans-être-authentifié-%3E-Attendu-%3A-réponse-HTTP-401.xml
+Test-Suite-0---LibrePlan---Authentification---Cas-non-passants-et-Cas-passants\TC000.1.2---Cas-non-passant---POST-en-tant-que-Reader-et-non-Writer-%3E-Attendu-%3A-réponse-HTTP-403.xml
+Test-Suite-0---LibrePlan---Authentification---Cas-non-passants-et-Cas-passants\TC000.2.1---Cas-passant---GET-tous-les-projets-authentifié-comme-Reader-%3E-Attendu-%3A-réponse-HTTP-200-%2B-projets-contenus.xml
+Test-Suite-0---LibrePlan---Authentification---Cas-non-passants-et-Cas-passants\TC000.2.2---Cas-passant---GET-tous-les-projets-authentifié-comme-Writer-%3E-Attendu-%3A-réponse-HTTP-200-%2B-projets-contenus.xml
+Test-Suite-0---LibrePlan---Authentification---Cas-non-passants-et-Cas-passants\TC000.2.3---Cas-passant---POST-en-tant-que-Writer-%3E-Attendu-%3A-réponse-HTTP-201-%2B-entité-créée.xml
 Test-Suite-1---LibrePlan---Calendriers\TC001---Récupérer-tous-les-calendriers.xml
 Test-Suite-1---LibrePlan---Calendriers\TC002---Récupérer-un-calendrier-spécifique.xml
 Test-Suite-2---LibrePlan---Projets\TC003---Récupérer-tous-les-projets.xml

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:securityTest id="b6ebaa89-9d31-41cb-a5aa-2d7b9010f2b9" testCaseId="db4c4be7-1d96-4689-9201-e4de1bcf5c22" name="Security TC000.2 - Work In Progress for P.O.C." failSecurityTestOnScanErrors="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b6ebaa89-9d31-41cb-a5aa-2d7b9010f2b9fileName">Security-TC000.2---Work-In-Progress-for-P.O.C.-2</con:setting></con:settings><con:properties/><con:reportParameters/></con:securityTest>
