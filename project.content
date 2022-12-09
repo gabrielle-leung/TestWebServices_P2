@@ -1,6 +1,7 @@
 LibrePlan\%3Cservice-path%3E.xml
 LibrePlan\Special-URL-for-work-report-lines-%3Centity-code%3E.xml
-Security-Test-1.xml
+Security-TC000.1.xml
+Security-TC000.2.xml
 Test-Suite-0---LibrePlan---Authentification---Cas-non-passants\TC000.1---Cas-non-passant---GET-sans-être-authentifié-%3E-Attendu-%3A-réponse-HTTP-401.xml
 Test-Suite-0---LibrePlan---Authentification---Cas-non-passants\TC000.2---Cas-non-passants---POST-en-tant-que-Reader-et-non-Writer-%3E-Attendu-%3A-réponse-HTTP-403.xml
 Test-Suite-1---LibrePlan---Calendriers\TC001---Récupérer-tous-les-calendriers.xml
@@ -12,3 +13,4 @@ Test-Suite-3---Libreplan---Ressources\TC006---Récupérer-toutes-les-ressources.xm
 Test-Suite-3---Libreplan---Ressources\TC007---Récupérer-une-ressource-spécifique.xml
 Test-Suite-3---Libreplan---Ressources\TC008---Créer-une-ressource-%3E-Vérifier-sa-Création-%28%3E-PROBLEME-%3A-suppression-impossible-cf.-Documentation%29.xml
 Test-Suite-3---Libreplan---Ressources\TC009---Supprimer-des-ressources-%28IMPOSSIBLE-cf.-Documentation%29.xml
+Load-TC000.xml
