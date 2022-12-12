@@ -1,0 +1,8 @@
+LD-TC002.1---Créer-des-documents---Work-In-Progress.xml
+LD-TC002.2---Mettre-à-jour-un-document.xml
+LD-TC002.3---Poser-un-bookmark-sur-un-document-existant-%28par-Id%29.xml
+LD-TC002.4---Retirer-un-bookmark-posé-sur-un-document.xml
+LD-TC002.5---Ajouter-un-mot-clé-%28tag%29-à-un-document-%28opt%29.xml
+LD-TC002.6---Chercher-un-document-par-mot-clé.xml
+LD-TC002.7---Chercher-un-document-par-date---Work-In-Progress.xml
+LD-TC002.8---Supprimer-un-document-%28Problème-%3A-jeu-de-données-à-recharger-en-IHM-tant-que-la-création-de-document-par-API-n%27est-pas-solutionnée%29.xml

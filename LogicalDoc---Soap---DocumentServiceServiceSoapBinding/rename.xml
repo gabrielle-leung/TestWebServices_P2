@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="918c2490-3e94-423e-84a3-76ca3f04aeee" isOneWay="false" action="" name="rename" bindingOperationName="rename" type="Request-Response" outputName="renameResponse" inputName="rename" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="918c2490-3e94-423e-84a3-76ca3f04aeeefileName">rename</con:setting></con:settings>
+      <con:call id="86793115-30ed-49d9-9259-272033ec3168" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:rename>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <docId>?</docId>\r
+         <!--Optional:-->\r
+         <name>?</name>\r
+      </ws:rename>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/rename"/>
+      </con:call>
+    </con:operation>

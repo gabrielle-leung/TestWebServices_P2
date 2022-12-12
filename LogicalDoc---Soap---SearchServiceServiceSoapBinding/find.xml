@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b9986b98-64dc-4cb1-be1d-d12260e98e75" isOneWay="false" action="" name="find" bindingOperationName="find" type="Request-Response" outputName="findResponse" inputName="find" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="b9986b98-64dc-4cb1-be1d-d12260e98e75fileName">find</con:setting></con:settings>
+      <con:call id="dba46410-5cf8-4c4e-a8e8-1f00dd4756ff" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Search</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:find>\r
+         <!--Optional:-->\r
+         <sid>gero et</sid>\r
+         <!--Optional:-->\r
+         <options>\r
+            <caseSensitive>3</caseSensitive>\r
+            <!--Optional:-->\r
+            <creationFrom>sonoras imperio</creationFrom>\r
+            <!--Optional:-->\r
+            <creationTo>quae divum incedo</creationTo>\r
+            <!--Optional:-->\r
+            <dateFrom>verrantque per auras</dateFrom>\r
+            <!--Optional:-->\r
+            <dateTo>per auras</dateTo>\r
+            <!--Optional:-->\r
+            <description>circum claustra</description>\r
+            <!--Optional:-->\r
+            <expression>nimborum in</expression>\r
+            <!--Optional:-->\r
+            <expressionLanguage>foedere certo</expressionLanguage>\r
+            <!--Zero or more repetitions:-->\r
+            <fields>profundum quippe ferant</fields>\r
+            <!--Zero or more repetitions:-->\r
+            <filterIds>10</filterIds>\r
+            <!--Optional:-->\r
+            <folderId>10</folderId>\r
+            <!--Optional:-->\r
+            <format>et carcere</format>\r
+            <!--Optional:-->\r
+            <language>iovis rapidum iaculata</language>\r
+            <maxHits>3</maxHits>\r
+            <!--Optional:-->\r
+            <name>speluncis abdidit</name>\r
+            <retrieveAliases>3</retrieveAliases>\r
+            <searchInSubPath>3</searchInSubPath>\r
+            <!--Optional:-->\r
+            <sizeMax>10</sizeMax>\r
+            <!--Optional:-->\r
+            <sizeMin>10</sizeMin>\r
+            <!--Optional:-->\r
+            <template>10</template>\r
+            <!--Optional:-->\r
+            <topOperator>bella gero et</topOperator>\r
+            <type>3</type>\r
+         </options>\r
+      </ws:find>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Search/find"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>

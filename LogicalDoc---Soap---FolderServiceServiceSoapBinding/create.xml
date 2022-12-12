@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ca1e4fbf-bff5-48b8-8e04-d1b87d47ffa2" isOneWay="false" action="" name="create" bindingOperationName="create" type="Request-Response" outputName="createResponse" inputName="create" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="ca1e4fbf-bff5-48b8-8e04-d1b87d47ffa2fileName">create</con:setting></con:settings>
+      <con:call id="7a76af25-720d-410f-b83a-92ac588f9ee9" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Folder</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:create>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <!--Optional:-->\r
+         <folder>\r
+            <!--Zero or more repetitions:-->\r
+            <attributes>\r
+               <!--Optional:-->\r
+               <dateValue>?</dateValue>\r
+               <!--Optional:-->\r
+               <doubleValue>?</doubleValue>\r
+               <editor>?</editor>\r
+               <hidden>?</hidden>\r
+               <!--Optional:-->\r
+               <intValue>?</intValue>\r
+               <!--Optional:-->\r
+               <label>?</label>\r
+               <mandatory>?</mandatory>\r
+               <multiple>?</multiple>\r
+               <!--Optional:-->\r
+               <name>?</name>\r
+               <!--Optional:-->\r
+               <parent>?</parent>\r
+               <position>?</position>\r
+               <!--Optional:-->\r
+               <setId>?</setId>\r
+               <!--Optional:-->\r
+               <stringValue>?</stringValue>\r
+               <!--Optional:-->\r
+               <stringValues>?</stringValues>\r
+               <type>?</type>\r
+               <!--Optional:-->\r
+               <value>?</value>\r
+            </attributes>\r
+            <!--Optional:-->\r
+            <creation>?</creation>\r
+            <!--Optional:-->\r
+            <creator>?</creator>\r
+            <!--Optional:-->\r
+            <description>?</description>\r
+            <!--Optional:-->\r
+            <foldRef>?</foldRef>\r
+            <hidden>?</hidden>\r
+            <id>?</id>\r
+            <!--Optional:-->\r
+            <lastModified>?</lastModified>\r
+            <!--Optional:-->\r
+            <name>?</name>\r
+            <parentId>?</parentId>\r
+            <position>?</position>\r
+            <!--Optional:-->\r
+            <securityRef>?</securityRef>\r
+            <!--Optional:-->\r
+            <storage>?</storage>\r
+            <!--Zero or more repetitions:-->\r
+            <tags>?</tags>\r
+            <!--Optional:-->\r
+            <templateId>?</templateId>\r
+            <templateLocked>?</templateLocked>\r
+            <type>?</type>\r
+         </folder>\r
+      </ws:create>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Folder/create"/>
+      </con:call>
+    </con:operation>

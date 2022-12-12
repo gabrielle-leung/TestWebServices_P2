@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e38db4f9-484a-4603-8064-580eb5373e1f" isOneWay="false" action="" name="sendEmail" bindingOperationName="sendEmail" type="Request-Response" outputName="sendEmailResponse" inputName="sendEmail" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="e38db4f9-484a-4603-8064-580eb5373e1ffileName">sendEmail</con:setting></con:settings>
+      <con:call id="f34b0151-30ab-4c5a-9d36-9f9c2db3185a" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:sendEmail>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <!--Zero or more repetitions:-->\r
+         <docIds>?</docIds>\r
+         <!--Optional:-->\r
+         <recipients>?</recipients>\r
+         <!--Optional:-->\r
+         <subject>?</subject>\r
+         <!--Optional:-->\r
+         <message>?</message>\r
+      </ws:sendEmail>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/sendEmail"/>
+      </con:call>
+    </con:operation>

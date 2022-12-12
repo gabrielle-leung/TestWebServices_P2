@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="f4ac69ea-7427-4628-ad01-279815e02cdb" isOneWay="false" action="" name="move" bindingOperationName="move" type="Request-Response" outputName="moveResponse" inputName="move" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="f4ac69ea-7427-4628-ad01-279815e02cdbfileName">move</con:setting></con:settings>
+      <con:call id="64513bf8-5fa6-4524-aee5-4dd69d9e2b94" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:move>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <docId>?</docId>\r
+         <folderId>?</folderId>\r
+      </ws:move>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/move"/>
+      </con:call>
+    </con:operation>

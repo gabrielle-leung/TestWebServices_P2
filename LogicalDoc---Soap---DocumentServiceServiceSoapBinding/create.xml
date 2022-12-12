@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b7f7160f-9740-4338-af1d-00fdcb1a60c5" isOneWay="false" action="" name="create" bindingOperationName="create" type="Request-Response" outputName="createResponse" inputName="create" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="b7f7160f-9740-4338-af1d-00fdcb1a60c5fileName">create</con:setting></con:settings>
+      <con:call id="94295c06-bb5b-42f9-95c9-155077212e74" name="Request 1">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:create>
+         <!--Optional:-->
+         <sid>70fc1ba7-5583-4908-a933-a1c55be24ea6</sid>
+         <!--Optional:-->
+         <document>
+            <id>055</id>
+            <fileSize>5105</fileSize>
+            <date>2021-12-08</date>
+            <type>txt/xml</type>
+            <fileName>doc.xml</fileName>
+            <folderId>100</folderId>
+         </document>
+         <content>cid:742465601193</content>
+      </ws:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:attachment>
+          <con:name>doc.xml</con:name>
+          <con:contentType>text/xml</con:contentType>
+          <con:size>5105</con:size>
+          <con:contentId>doc.xml</con:contentId>
+          <con:part>742465601193</con:part>
+          <con:url>../doc.xml</con:url>
+          <con:id>cdfa28b3-ecbb-4ffd-8a23-837dd8837e90</con:id>
+        </con:attachment>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/create"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>

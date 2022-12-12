@@ -1,0 +1,6 @@
+LibrePlan---REST
+LogicalDoc---REST
+LogicalDoc---Soap---FolderServiceServiceSoapBinding
+LogicalDoc---Soap---DocumentServiceServiceSoapBinding
+LogicalDoc---Soap---SearchServiceServiceSoapBinding
+LogicalDoc---Soap---AuthServiceServiceSoapBinding

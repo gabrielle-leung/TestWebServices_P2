@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="5c35a356-576e-478d-b904-b85c97070d0a" name="LibrePlan - Test Suite 1 - Calendriers" authProfile="Reader" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5c35a356-576e-478d-b904-b85c97070d0afileName">LibrePlan---Test-Suite-1---Calendriers</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

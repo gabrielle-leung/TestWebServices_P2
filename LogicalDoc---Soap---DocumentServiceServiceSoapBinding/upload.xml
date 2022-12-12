@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="164e493e-ba3a-47d3-a1f0-ab14e3d03f08" isOneWay="false" action="" name="upload" bindingOperationName="upload" type="Request-Response" outputName="uploadResponse" inputName="upload" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="164e493e-ba3a-47d3-a1f0-ab14e3d03f08fileName">upload</con:setting></con:settings>
+      <con:call id="4d8a1df2-48bb-4ae5-93bf-747e4fa89181" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:upload>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <!--Optional:-->\r
+         <docId>?</docId>\r
+         <!--Optional:-->\r
+         <folderId>?</folderId>\r
+         <release>?</release>\r
+         <!--Optional:-->\r
+         <filename>?</filename>\r
+         <!--Optional:-->\r
+         <language>?</language>\r
+         <!--Optional:-->\r
+         <content>cid:1034360622513</content>\r
+      </ws:upload>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/upload"/>
+      </con:call>
+    </con:operation>

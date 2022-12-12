@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="278709fa-f5aa-482d-a88a-2d8029083222" name="LogicalDoc - Test Suite 1 - Répertoires" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0de8d1f6-2dc0-434c-980f-8ed8e95e6e29fileName">Test-Suite-1---LogicalDoc---Répertoires</con:setting><con:setting id="278709fa-f5aa-482d-a88a-2d8029083222fileName">LogicalDoc---Test-Suite-1---Répertoires</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="2bd8ac8c-cf0a-4002-9c2e-172e9dbb05ec" isOneWay="false" action="" name="getRootFolder" bindingOperationName="getRootFolder" type="Request-Response" outputName="getRootFolderResponse" inputName="getRootFolder" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="2bd8ac8c-cf0a-4002-9c2e-172e9dbb05ecfileName">getRootFolder</con:setting></con:settings>
+      <con:call id="8120fe58-a733-43b5-b73e-79915322ad22" name="Request 1">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Folder</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getRootFolder>\r
+         <!--Optional:-->\r
+         <sid>97e86d80-28a4-43e3-809c-da4f1de12841</sid>\r
+      </ws:getRootFolder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Folder/getRootFolder"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>

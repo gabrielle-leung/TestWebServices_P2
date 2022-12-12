@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="86d2899d-72d8-499a-a6cc-6af3b7e21e3e" isOneWay="false" action="" name="grantUser" bindingOperationName="grantUser" type="Request-Response" outputName="grantUserResponse" inputName="grantUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="86d2899d-72d8-499a-a6cc-6af3b7e21e3efileName">grantUser</con:setting></con:settings>
+      <con:call id="feb42471-7315-4891-ac7c-edfa36fc9119" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Folder</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:grantUser>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <folderId>?</folderId>\r
+         <userId>?</userId>\r
+         <permissions>?</permissions>\r
+         <recursive>?</recursive>\r
+      </ws:grantUser>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Folder/grantUser"/>
+      </con:call>
+    </con:operation>

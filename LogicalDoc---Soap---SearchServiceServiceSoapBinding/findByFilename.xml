@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ddc71863-b399-4bba-a059-17c890f8fed6" isOneWay="false" action="" name="findByFilename" bindingOperationName="findByFilename" type="Request-Response" outputName="findByFilenameResponse" inputName="findByFilename" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="ddc71863-b399-4bba-a059-17c890f8fed6fileName">findByFilename</con:setting></con:settings>
+      <con:call id="bca54179-5717-4bfa-9331-2921987b0245" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Search</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:findByFilename>\r
+         <!--Optional:-->\r
+         <sid>gero et</sid>\r
+         <!--Optional:-->\r
+         <filename>sonoras imperio</filename>\r
+      </ws:findByFilename>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Search/findByFilename"/>
+      </con:call>
+    </con:operation>

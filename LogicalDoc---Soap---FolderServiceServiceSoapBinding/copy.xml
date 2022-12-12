@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="f1fa00c0-667d-4d67-bf76-d882f0d06973" isOneWay="false" action="" name="copy" bindingOperationName="copy" type="Request-Response" outputName="copyResponse" inputName="copy" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="f1fa00c0-667d-4d67-bf76-d882f0d06973fileName">copy</con:setting></con:settings>
+      <con:call id="cdd32e81-1552-4c1c-85bd-aaa444173731" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Folder</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:copy>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <folderId>?</folderId>\r
+         <targetId>?</targetId>\r
+         <foldersOnly>?</foldersOnly>\r
+         <inheritSecurity>?</inheritSecurity>\r
+      </ws:copy>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Folder/copy"/>
+      </con:call>
+    </con:operation>

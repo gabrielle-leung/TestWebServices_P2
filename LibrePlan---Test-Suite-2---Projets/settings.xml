@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="64ab5db9-cfbb-44da-a63b-6cad82c87944" name="LibrePlan - Test Suite 2 - Projets" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="64ab5db9-cfbb-44da-a63b-6cad82c87944fileName">LibrePlan---Test-Suite-2---Projets</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>
