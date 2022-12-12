@@ -52,7 +52,7 @@ targetStep.setPropertyValue("sid", sid)</script>
           <con:properties>
             <con:property>
               <con:name>sid</con:name>
-              <con:value>ac952219-6ed5-44f3-86c8-d3a1b96a5b05</con:value>
+              <con:value>00da0c31-ef29-446a-ae0c-8fd9668c63f1</con:value>
             </con:property>
             <con:property>
               <con:name>id</con:name>
