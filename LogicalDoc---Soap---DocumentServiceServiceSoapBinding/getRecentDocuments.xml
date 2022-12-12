@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="a633cb73-2694-4898-b45a-3c8c1f64db2e" isOneWay="false" action="" name="getRecentDocuments" bindingOperationName="getRecentDocuments" type="Request-Response" outputName="getRecentDocumentsResponse" inputName="getRecentDocuments" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="a633cb73-2694-4898-b45a-3c8c1f64db2efileName">getRecentDocuments</con:setting></con:settings>
+      <con:call id="541c725c-6959-42c3-a685-e78a48d07e3b" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getRecentDocuments>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <!--Optional:-->\r
+         <maxHits>?</maxHits>\r
+      </ws:getRecentDocuments>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/getRecentDocuments"/>
+      </con:call>
+    </con:operation>

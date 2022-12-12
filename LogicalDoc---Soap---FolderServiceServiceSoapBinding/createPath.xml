@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="467059c6-15cc-475e-aae9-d659c2dfef53" isOneWay="false" action="" name="createPath" bindingOperationName="createPath" type="Request-Response" outputName="createPathResponse" inputName="createPath" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="467059c6-15cc-475e-aae9-d659c2dfef53fileName">createPath</con:setting></con:settings>
+      <con:call id="46ac0915-1864-4b05-845b-8ec7d75c93fb" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Folder</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:createPath>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <parentId>?</parentId>\r
+         <!--Optional:-->\r
+         <path>?</path>\r
+      </ws:createPath>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Folder/createPath"/>
+      </con:call>
+    </con:operation>

@@ -1,0 +1,4 @@
+LD-TC001.1---Créer-un-répertoire-%3E-GET-id-%3E-Le-renommer-%3E-Le-mettre-à-jour-%3E-Le-supprimer.xml
+LD-TC001.2---Renommer-un-répertoire-%28opt%29---Attention-%3A-données-sensibles-potentiellement-exposées%21%21%21.xml
+LD-TC001.3---Mettre-à-jour-un-répertoire-%28opt%29.xml
+LD-TC001.4---Création-d%27un-répertoire-%3E-Ajout-d%27un-tag-%3E-GET-par-tag-%3E-Suppression-par-Id.xml

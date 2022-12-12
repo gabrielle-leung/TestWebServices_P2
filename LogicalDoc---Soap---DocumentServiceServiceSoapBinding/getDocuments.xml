@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="550a01aa-2ff6-4cee-a265-b2b0f746e3b6" isOneWay="false" action="" name="getDocuments" bindingOperationName="getDocuments" type="Request-Response" outputName="getDocumentsResponse" inputName="getDocuments" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="550a01aa-2ff6-4cee-a265-b2b0f746e3b6fileName">getDocuments</con:setting></con:settings>
+      <con:call id="b3152ee0-5f0f-47ee-b94e-af7e14044412" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getDocuments>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <!--Zero or more repetitions:-->\r
+         <docIds>?</docIds>\r
+      </ws:getDocuments>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/getDocuments"/>
+      </con:call>
+    </con:operation>

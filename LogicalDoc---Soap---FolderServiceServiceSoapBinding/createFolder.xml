@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4520aaa3-92d4-4af2-a3e7-b8a0ea99883d" isOneWay="false" action="" name="createFolder" bindingOperationName="createFolder" type="Request-Response" outputName="createFolderResponse" inputName="createFolder" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="4520aaa3-92d4-4af2-a3e7-b8a0ea99883dfileName">createFolder</con:setting></con:settings>
+      <con:call id="3a9a0424-b91e-4009-99f7-178f2a6d2454" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Folder</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:createFolder>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <parentId>?</parentId>\r
+         <!--Optional:-->\r
+         <name>?</name>\r
+      </ws:createFolder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Folder/createFolder"/>
+      </con:call>
+    </con:operation>

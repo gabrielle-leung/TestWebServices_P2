@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="577ef59b-e655-4780-a718-0854d3a861e8" isOneWay="false" action="" name="link" bindingOperationName="link" type="Request-Response" outputName="linkResponse" inputName="link" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="577ef59b-e655-4780-a718-0854d3a861e8fileName">link</con:setting></con:settings>
+      <con:call id="0ee396ad-30fb-4ecf-8b96-8a8f214b9879" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:link>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <doc1>?</doc1>\r
+         <doc2>?</doc2>\r
+         <!--Optional:-->\r
+         <type>?</type>\r
+      </ws:link>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/link"/>
+      </con:call>
+    </con:operation>

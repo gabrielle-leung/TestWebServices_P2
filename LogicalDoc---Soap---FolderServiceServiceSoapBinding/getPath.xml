@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="12de1d8c-24ff-4480-adf0-5e10638eda6b" isOneWay="false" action="" name="getPath" bindingOperationName="getPath" type="Request-Response" outputName="getPathResponse" inputName="getPath" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="12de1d8c-24ff-4480-adf0-5e10638eda6bfileName">getPath</con:setting></con:settings>
+      <con:call id="1be9ac4e-0d97-4c32-bef8-56d1aea1a12e" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Folder</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getPath>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <folderId>?</folderId>\r
+      </ws:getPath>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Folder/getPath"/>
+      </con:call>
+    </con:operation>

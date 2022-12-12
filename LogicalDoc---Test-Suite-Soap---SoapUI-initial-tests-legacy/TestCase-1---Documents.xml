@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="32c9e811-cea6-4418-8b74-7f55dca80d9c" failOnError="true" failTestCaseOnErrors="true" keepSession="true" maxResults="0" name="TestCase 1 - Documents" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="32c9e811-cea6-4418-8b74-7f55dca80d9cfileName">TestCase-1---Documents</con:setting></con:settings>
+      <con:testStep type="request" id="2e47e26e-817a-44b8-8a84-204d9efe08cd" name="login">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - AuthServiceServiceSoapBinding</con:interface>
+          <con:operation>login</con:operation>
+          <con:request name="login" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="277d2619-dd54-4cc6-9a74-38bafce869f9">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Auth</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:login>
+         <!--Optional:-->
+         <username>admin</username>
+         <!--Optional:-->
+         <password>admin</password>
+      </ws:login>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="57645683-e968-4e1d-9942-c52b3a8fa9f8" name="SOAP Response"/>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Auth/login"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Set SID" id="783027cc-c13a-4e3e-88f1-4fb920a5e34e">
+        <con:settings/>
+        <con:config>
+          <script>import com.eviware.soapui.support.XmlHolder
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context);
+def response = groovyUtils.getXmlHolder(testRunner.testCase.testSteps["login"].testRequest.response.getContentAsXml())
+def sid =response.getNodeValue("//return")
+targetStep = testRunner.testCase.getTestStepByName("Properties")
+targetStep.setPropertyValue("sid", sid)</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="properties" name="Properties" id="024c7d3d-0b1d-4525-9026-1c08f78f1a2c">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>sid</con:name>
+              <con:value>ac952219-6ed5-44f3-86c8-d3a1b96a5b05</con:value>
+            </con:property>
+            <con:property>
+              <con:name>id</con:name>
+              <con:value xsi:nil="true"/>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="21ab62b3-a162-4c89-9170-a89e5b9b5ae0" name="create document">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - DocumentServiceServiceSoapBinding</con:interface>
+          <con:operation>create</con:operation>
+          <con:request name="create document" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="348d0bed-f963-433a-a74d-2568dab23b05">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:create>
+         <!--Optional:-->
+         <sid>${Properties#sid}</sid>
+         <!--Optional:-->
+         <document>
+            <fileSize>333</fileSize>
+            <creatorId/><date>2021-12-09</date>
+            <id/><immutable/><indexed/><nature/><pages/><published/><publisherId/><signed/><stamped/><status/><type>txt/plain</type>
+            <exportStatus/><fileName>installer maven.txt</fileName>
+            <folderId>108</folderId>
+         </document>
+         <content>cid:742465601193</content>
+      </ws:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="0fb0560a-aec0-4578-aada-3506bea0cc1f" name="SOAP Response"/>
+            <con:assertion type="Valid HTTP Status Codes" id="d4ba4b80-0756-475c-b0be-bae102a3b64d" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:attachment>
+              <con:name>installer maven.txt</con:name>
+              <con:contentType>text/plain</con:contentType>
+              <con:size>333</con:size>
+              <con:contentId>installer maven.txt</con:contentId>
+              <con:part>742465601193</con:part>
+              <con:data>UEsDBBQACAgIAJiJiVMAAAAAAAAAAAAAAAATAAAAaW5zdGFsbGVyIG1hdmVuLnR4dG2QzUrEQBCE7wPzDk1giYJe9uhNVPCyePEoLL1Ja1oyPbHnh9033ryFk8mCiN5qmq+quwY/fYqk4DCT3Fljzes8zt2A+lGmSQgyaWAv0Lc4YdcNtLIL+ogSYKQAGZXxsKi+JcmsXoQcSQTFy4Ilqhph8I6A4jrZ1qc19z9k/zc1nEI8uyKu6g5Kx2trHkb+SoUPSQsOzYRxaP5xW0O/7oDSwbHA5KtxzYNms9vun192T5u3A0tT69GUuIS1XCrFgkHnnUMpIs/K70x6Ay4L3F7+6BtQSwcIhHcKRNMAAABNAQAAUEsBAhQAFAAICAgAmImJU4R3CkTTAAAATQEAABMAAAAAAAAAAAAAAAAAAAAAAGluc3RhbGxlciBtYXZlbi50eHRQSwUGAAAAAAEAAQBBAAAAFAEAAAAA</con:data>
+              <con:id>1e83f9b1-a6ae-493a-8e82-a4267a1d69ea</con:id>
+            </con:attachment>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/create"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Set id Doc" id="b33c6bb5-fa23-4dd8-9608-9edbf5d36f8b">
+        <con:settings/>
+        <con:config>
+          <script>import com.eviware.soapui.support.XmlHolder
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context);
+def response = groovyUtils.getXmlHolder(testRunner.testCase.testSteps["create document"].testRequest.response.getContentAsXml())
+def id =response.getNodeValue("//id")
+targetStep = testRunner.testCase.getTestStepByName("Properties")
+targetStep.setPropertyValue("id", id)</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="dd48f422-701b-49fb-be37-7e5c10d1a0f2" name="create document NP">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - DocumentServiceServiceSoapBinding</con:interface>
+          <con:operation>create</con:operation>
+          <con:request name="create document NP" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="348d0bed-f963-433a-a74d-2568dab23b05">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:create>
+         <!--Optional:-->
+         <sid>${Properties#sid}</sid>
+         <!--Optional:-->
+         <document>
+            <id/>
+            <fileSize>333</fileSize>
+            <creatorId/><date>2021-12-09</date>
+            <immutable/><indexed/><nature/><pages/><published/><publisherId/><signed/><stamped/><status/><type>txt/plain</type>
+            <exportStatus/><fileName>installer maven.txt</fileName>
+            <folderId>100</folderId>
+         </document>
+         <content>cid:742465601193</content>
+      </ws:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="0fb0560a-aec0-4578-aada-3506bea0cc1f" name="SOAP Response"/>
+            <con:assertion type="Valid HTTP Status Codes" id="d4ba4b80-0756-475c-b0be-bae102a3b64d" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>500</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:attachment>
+              <con:name>installer maven.txt</con:name>
+              <con:contentType>text/plain</con:contentType>
+              <con:size>333</con:size>
+              <con:contentId>installer maven.txt</con:contentId>
+              <con:part>742465601193</con:part>
+              <con:data>UEsDBBQACAgIAJiJiVMAAAAAAAAAAAAAAAATAAAAaW5zdGFsbGVyIG1hdmVuLnR4dG2QzUrEQBCE7wPzDk1giYJe9uhNVPCyePEoLL1Ja1oyPbHnh9033ryFk8mCiN5qmq+quwY/fYqk4DCT3Fljzes8zt2A+lGmSQgyaWAv0Lc4YdcNtLIL+ogSYKQAGZXxsKi+JcmsXoQcSQTFy4Ilqhph8I6A4jrZ1qc19z9k/zc1nEI8uyKu6g5Kx2trHkb+SoUPSQsOzYRxaP5xW0O/7oDSwbHA5KtxzYNms9vun192T5u3A0tT69GUuIS1XCrFgkHnnUMpIs/K70x6Ay4L3F7+6BtQSwcIhHcKRNMAAABNAQAAUEsBAhQAFAAICAgAmImJU4R3CkTTAAAATQEAABMAAAAAAAAAAAAAAAAAAAAAAGluc3RhbGxlciBtYXZlbi50eHRQSwUGAAAAAAEAAQBBAAAAFAEAAAAA</con:data>
+              <con:id>1e83f9b1-a6ae-493a-8e82-a4267a1d69ea</con:id>
+            </con:attachment>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/create"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="b14cc1d4-9765-4c00-a901-85e44983d352" name="getDocument">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - DocumentServiceServiceSoapBinding</con:interface>
+          <con:operation>getDocument</con:operation>
+          <con:request name="getDocument" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="4936a380-e0af-4370-8a98-b77ed7ce247f">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:getDocument>
+         <!--Optional:-->
+         <sid>${Properties#sid}</sid>
+         <docId>${Properties#id}</docId>
+      </ws:getDocument>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="464f5975-4edd-4508-82a3-76b72d16fbe5" name="SOAP Response"/>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/getDocument"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="cc341eec-14df-4a8d-8827-722e0bb07cd7" name="update - Request 1">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - DocumentServiceServiceSoapBinding</con:interface>
+          <con:operation>update</con:operation>
+          <con:request name="update - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="e6ae669e-6082-4213-9b12-1098a88e6278">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:update>
+         <!--Optional:-->
+         <sid>${Properties#sid}</sid>
+         <!--Optional:-->
+         <document>
+            <!--Zero or more repetitions:-->
+            <attributes>
+            <editor/><hidden/><mandatory/><multiple/><position/><type/></attributes>
+            <creatorId/><date>2012-08-08</date>
+            <exportStatus/><fileName>Newname</fileName>
+            <fileSize>18</fileSize>
+            <folderId>100</folderId>
+            <id>${Properties#id}</id><immutable/><indexed/><nature/><pages/><published/><publisherId/><signed/><stamped/><status/>
+         </document>
+      </ws:update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="72f29ffa-c0c1-42ee-a886-2faa08ce2ec3" name="SOAP Response"/>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/update"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="64ece358-297f-47e9-be54-5a556a98438c" name="getDocument updated">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - DocumentServiceServiceSoapBinding</con:interface>
+          <con:operation>getDocument</con:operation>
+          <con:request name="getDocument updated" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="4936a380-e0af-4370-8a98-b77ed7ce247f">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:getDocument>
+         <!--Optional:-->
+         <sid>${Properties#sid}</sid>
+         <docId>${Properties#id}</docId>
+      </ws:getDocument>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="464f5975-4edd-4508-82a3-76b72d16fbe5" name="SOAP Response"/>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/getDocument"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="56830a6e-9854-4427-a536-c822dd67dd0f" name="delete - Request 1">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - DocumentServiceServiceSoapBinding</con:interface>
+          <con:operation>delete</con:operation>
+          <con:request name="delete - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="932274f0-24b5-4fca-b256-7db39db97347">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:delete>
+         <!--Optional:-->
+         <sid>${Properties#sid}</sid>
+         <docId>${Properties#id}</docId>
+      </ws:delete>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="0aa0bfad-7b20-4dd8-833b-658ac5ef61bc" name="SOAP Response"/>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/delete"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="a22b9762-876a-4c21-97b5-d2c6a682e7c9" name="getDocument deleted">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - DocumentServiceServiceSoapBinding</con:interface>
+          <con:operation>getDocument</con:operation>
+          <con:request name="getDocument deleted" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="4936a380-e0af-4370-8a98-b77ed7ce247f">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:getDocument>
+         <!--Optional:-->
+         <sid>${Properties#sid}</sid>
+         <docId>${Properties#id}</docId>
+      </ws:getDocument>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="464f5975-4edd-4508-82a3-76b72d16fbe5" name="SOAP Response"/>
+            <con:assertion type="Simple Contains" id="d700af5b-bc08-4f37-afcb-8d14836fa9cd" name="Contains">
+              <con:configuration>
+                <token>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   &lt;soap:Body>
+      &lt;ns2:getDocumentResponse xmlns:ns2="http://ws.logicaldoc.com"/>
+   &lt;/soap:Body>
+&lt;/soap:Envelope></token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/getDocument"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>

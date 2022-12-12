@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="dc8c8793-1d15-4ebc-a940-7a7f3c397259" isOneWay="false" action="" name="findFolders" bindingOperationName="findFolders" type="Request-Response" outputName="findFoldersResponse" inputName="findFolders" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="dc8c8793-1d15-4ebc-a940-7a7f3c397259fileName">findFolders</con:setting></con:settings>
+      <con:call id="836fa5eb-bddf-4912-9823-4e4be3a31749" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Search</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:findFolders>\r
+         <!--Optional:-->\r
+         <sid>gero et</sid>\r
+         <!--Optional:-->\r
+         <name>sonoras imperio</name>\r
+      </ws:findFolders>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Search/findFolders"/>
+      </con:call>
+    </con:operation>

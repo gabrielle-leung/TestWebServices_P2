@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="fb8de48a-5d17-4031-976f-7f5f1240822c" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 2 - Search" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="fb8de48a-5d17-4031-976f-7f5f1240822cfileName">TestCase-2---Search</con:setting></con:settings>
+      <con:testStep type="request" id="5e1b4294-9e3b-4614-b692-fbfa710b72dc" name="login">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - AuthServiceServiceSoapBinding</con:interface>
+          <con:operation>login</con:operation>
+          <con:request name="login" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="277d2619-dd54-4cc6-9a74-38bafce869f9">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Auth</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:login>
+         <!--Optional:-->
+         <username>admin</username>
+         <!--Optional:-->
+         <password>admin</password>
+      </ws:login>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="57645683-e968-4e1d-9942-c52b3a8fa9f8" name="SOAP Response"/>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Auth/login"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Set SID" id="238a9a47-31b4-46a4-8d0e-fd7b02193209">
+        <con:settings/>
+        <con:config>
+          <script>import com.eviware.soapui.support.XmlHolder
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context);
+def response = groovyUtils.getXmlHolder(testRunner.testCase.testSteps["login"].testRequest.response.getContentAsXml())
+def sid =response.getNodeValue("//return")
+targetStep = testRunner.testCase.getTestStepByName("Properties")
+targetStep.setPropertyValue("sid", sid)</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="properties" name="Properties" id="385348e5-d747-499c-9932-5a31093e3e2d">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>sid</con:name>
+              <con:value>8d3d0570-9d90-446a-a569-72aeaa62e762</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="4fa28642-e7a0-4c1c-9991-ce5a13d1941f" name="Search Mot clef">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - SearchServiceServiceSoapBinding</con:interface>
+          <con:operation>find</con:operation>
+          <con:request name="Search Mot clef" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="a76266f1-6aa0-4a4f-be2a-ae1cc868a251">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Search</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:find>
+         <!--Optional:-->
+         <sid>${Properties#sid}</sid>
+         <!--Optional:-->
+         <options>
+            <caseSensitive/><maxHits/><name>installer</name><retrieveAliases/><searchInSubPath/><type/>
+         </options>
+      </ws:find>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="4c324efc-7c89-4302-9090-d6d23d55df22" name="SOAP Response"/>
+            <con:assertion type="Simple Contains" id="50a87576-6744-494a-b21d-8625be471ac3" name="Contains">
+              <con:configuration>
+                <token>installer</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Search/find"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="e7a819be-dacb-4831-9ffd-a7dafc814d9a" name="Search Id Folder">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - SearchServiceServiceSoapBinding</con:interface>
+          <con:operation>find</con:operation>
+          <con:request name="Search Id Folder" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="a76266f1-6aa0-4a4f-be2a-ae1cc868a251">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Search</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:find>
+         <!--Optional:-->
+         <sid>${Properties#sid}</sid>
+         <!--Optional:-->
+         <options>
+      
+            <caseSensitive/><folderId>100</folderId><maxHits/><retrieveAliases/><searchInSubPath/><type/>
+            
+         </options>
+      </ws:find>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="4c324efc-7c89-4302-9090-d6d23d55df22" name="SOAP Response"/>
+            <con:assertion type="Simple Contains" id="a010914f-25eb-4b1f-8e21-ca847feea6ff" name="Contains">
+              <con:configuration>
+                <token>Dossier a bob</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Search/find"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="782ca417-c859-4aa3-be09-a768571d4474" name="SearchDate">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>LogicalDoc - Soap - SearchServiceServiceSoapBinding</con:interface>
+          <con:operation>find</con:operation>
+          <con:request name="SearchDate" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="a76266f1-6aa0-4a4f-be2a-ae1cc868a251">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://localhost:8094/logicaldoc/services/Search</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:find>
+         <!--Optional:-->
+         <sid>${Properties#sid}</sid>
+         <!--Optional:-->
+         <options>      
+            <caseSensitive/><dateFrom>2021-12-01</dateFrom>
+            <dateTo>2021-12-15</dateTo><maxHits/><retrieveAliases/><searchInSubPath/><type/>
+         </options>
+      </ws:find>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="SOAP Response" id="4c324efc-7c89-4302-9090-d6d23d55df22" name="SOAP Response"/>
+            <con:assertion type="Simple Contains" id="98d611c2-470f-4464-b7f7-8d70cfa65663" name="Contains">
+              <con:configuration>
+                <token>doc(1)</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="069a1d8b-de11-4a0f-ae8e-3484e768a678" name="Contains 1">
+              <con:configuration>
+                <token>prop</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="09fa02a2-5929-48eb-ae34-1f39b584257f" name="Contains 2">
+              <con:configuration>
+                <token>installer maven</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Search/find"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="7eb7de14-f556-47c8-8ea3-326f84714fee" name="LibrePlan - Test Suite 0 - Authentification - Cas non passants et Cas passants" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="7eb7de14-f556-47c8-8ea3-326f84714feefileName">LibrePlan---Test-Suite-0---Authentification---Cas-non-passants-et-Cas-passants</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

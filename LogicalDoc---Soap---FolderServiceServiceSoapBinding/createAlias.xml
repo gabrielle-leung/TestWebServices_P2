@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e8fa8764-c402-4e76-841b-64265423e65b" isOneWay="false" action="" name="createAlias" bindingOperationName="createAlias" type="Request-Response" outputName="createAliasResponse" inputName="createAlias" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="e8fa8764-c402-4e76-841b-64265423e65bfileName">createAlias</con:setting></con:settings>
+      <con:call id="5aa1b7e9-d7b8-4d5e-bcbf-1515cfba4937" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Folder</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:createAlias>\r
+         <!--Optional:-->\r
+         <sid>?</sid>\r
+         <arg1>?</arg1>\r
+         <arg2>?</arg2>\r
+      </ws:createAlias>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Folder/createAlias"/>
+      </con:call>
+    </con:operation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="cd0202f6-6182-4bbb-96f9-52009e4c282c" isOneWay="false" action="" name="createPdf" bindingOperationName="createPdf" type="Request-Response" outputName="createPdfResponse" inputName="createPdf" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings><con:setting id="cd0202f6-6182-4bbb-96f9-52009e4c282cfileName">createPdf</con:setting></con:settings>
+      <con:call id="1b8883ab-931e-4c5e-803e-92058b7d1cdc" name="Request 1">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8094/logicaldoc/services/Document</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.logicaldoc.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:createPdf>\r
+         <!--Optional:-->\r
+         <sid>1494d84b-295b-4345-b269-cd8146df2c17</sid>\r
+         <docId>58</docId>\r
+      </ws:createPdf>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.soap.webservice.logicaldoc.com/Document/createPdf"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>

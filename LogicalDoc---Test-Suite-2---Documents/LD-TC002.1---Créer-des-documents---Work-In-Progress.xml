@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8bcb97c1-1577-4753-80c2-f5ee86a3f672" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="LD-TC002.1 - Créer des documents - Work In Progress" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b4805e26-e493-4d38-a06d-46ea3d9fa663fileName">TC002_1---Créer-des-documents</con:setting><con:setting id="8bcb97c1-1577-4753-80c2-f5ee86a3f672fileName">LD-TC002.1---Créer-des-documents---Work-In-Progress</con:setting></con:settings><con:testStep type="properties" name="Properties" id="10d39b81-9d77-4933-abae-04dbf3370c47"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties/></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - POST /document/create" id="85acc07a-4dad-4a80-a293-e5e3e70632b5"><con:settings/><con:config service="LogicalDoc - REST" resourcePath="/services/rest/document/create" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - POST /document/create" id="f0ab280f-8a30-4c13-bea8-eea3e1df8ecc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8094/logicaldoc</con:endpoint><con:request>{
+  "id": 100,
+  "date": "string",
+  "publisher": "string",
+  "publisherId": 0,
+  "creator": "string",
+  "creatorId": 0,
+  "type": "string",
+  "creation": "string",
+  "fileName": "string",
+  "indexed": 0,
+  "signed": 0,
+  "tags": [
+    "string"
+  ],
+  "score": 0,
+  "comment": "string",
+  "lastModified": "string",
+  "rating": 0,
+  "published": 0,
+  "startPublishing": "string",
+  "stopPublishing": "string",
+  "pages": 0,
+  "nature": 0,
+  "formId": 0,
+  "passwordProtected": 0,
+  "ocrTemplateId": 0,
+  "ocrd": 0,
+  "barcodeTemplateId": 0,
+  "barcoded": 0
+}{
+  "id": 107,
+  "date": "string",
+  "publisher": "string",
+  "publisherId": 0,
+  "creator": "string",
+  "creatorId": 0,
+  "type": "string",
+  "creation": "string",
+  "fileName": "string",
+  "indexed": 0,
+  "signed": 0,
+  "tags": [
+    "string"
+  ],
+  "score": 0,
+  "comment": "string",
+  "lastModified": "string",
+  "rating": 0,
+  "published": 0,
+  "startPublishing": "string",
+  "stopPublishing": "string",
+  "pages": 0,
+  "nature": 0,
+  "formId": 0,
+  "passwordProtected": 0,
+  "ocrTemplateId": 0,
+  "ocrd": 0,
+  "barcodeTemplateId": 0,
+  "barcoded": 0
+}</con:request><con:originalUri>http://localhost/logicaldoc/services/rest/document/create</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="37daed98-4e4f-442d-bca8-961fa0a4f198" name="Valid HTTP Status Codes - 201 (attendu pour requête POST)"><con:settings/><con:configuration><codes>201</codes></con:configuration></con:assertion><con:assertion type="Sensitive Information Exposure" name="Sensitive Information Exposure" id="05f7983b-7c35-4914-9434-b9f32e7dafe9"><con:configuration><AssertionSpecificExposureList>~(?s).*Runtime (E|e)rror.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*SQLSTATE: [A-Z0-9].*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*(s|S)tack:.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*(s|S)yntax (e|E)rror\s.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*\w+/\d{1,2}(\.\d{1,3})+.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*Invalid column name\s.*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*
+            (ORA|EXP|IMP|KUP|UDE|UDI|DBV|LCD|QSM|OCI|RMAN|LFI|PLS|PLQ|AMD|CLSR|PROC|PROT|TNS|NNC|NLP|NNF|NMP|NCR|NZE|O2F|O2I|O2U|PCB|PCC|SQL|AUD|IMG|VID|DRG|LPX|LSX)-\d{5}\s
+        .*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*(p|P)owered by:? ([a-zA-Z]+)( [a-zA-Z]+){0,3}( |/)\d\.\d{1,2}\.\d{1,3}.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*at [\w\$]+(\.[\w\$&lt;>\[\],]+|\.\.ctor)+(\((([\w\$&lt;>\`\[\]]+ [\w\$&lt;>]+, )*(([\w\$&lt;>\`\[\]]+
+            [\w\$&lt;>]+)))\)|\(\))
+        .*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*&lt;\w+:frame\s*class=".*"\s*line=".*"\s*method=".*"\s*/>.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*Traceback \(most recent call last\):.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*((I|i)ncorrect|(I|i)nvalid) (s|S)yntax.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*(s|S)tack ?(t|T)race.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*(e|E)rror was:\s.*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*(v|V)ersion:? \d\.\d{1,2}\.{1,3}-?.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*from [\w\$]+(\.[\w\$&lt;>]+)+:\d+:in `.+'.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*Error in process &lt;\d+\.\d+\.\d+> with exit value:.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*STACK\s?TRACE.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*Warning: [\w]+\(\) .+ in .+ on line \d{1,6}.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*((A|a)pache|vBulletin|MySQL|PostgreSQL|phpBB|Internet Information Services)( |/)\d{1,2}(\.\d{1,3})+
+        .*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*at [a-zA-Z][\w\$]*(\.[a-zA-Z][\w\$]*)+\((Unknown Source|Native
+            Method|[a-zA-Z][\w\$]*\.([a-zA-Z]{3,5}):\d+)\)
+        .*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*[^\s]+\.rb:\d+:in `.+'.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><AssertionSpecificExposureList>~(?s).*File ".+", line [0-9]{1,6}, in.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList><IncludeProjectSpecific>true</IncludeProjectSpecific><IncludeGlobal>false</IncludeGlobal></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="9c005ddd-3162-4ec0-9b01-2b20a5ca0e45" name="Response SLA"><con:configuration><SLA>5000</SLA></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Admin</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:attachment><con:name>doc.xml</con:name><con:contentType>text/xml</con:contentType><con:size>83</con:size><con:contentId>doc.xml</con:contentId><con:url>C:/Users/Formation/Desktop/Cours/Projet 2 - Webservices/doc.xml</con:url><con:data>UEsDBBQACAgIAAEZjFUAAAAAAAAAAAAAAAAHAAAAZG9jLnhtbLOxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1ULK34+WyKUmtKAHSCgo2BYlFiXYZqTk5+Qrl+UU5KTb6YBGgGn2wIgBQSwcIraLCYEwAAABTAAAAUEsBAhQAFAAICAgAARmMVa2iwmBMAAAAUwAAAAcAAAAAAAAAAAAAAAAAAAAAAGRvYy54bWxQSwUGAAAAAAEAAQA1AAAAgQAAAAAA</con:data><con:id>664a3b85-1455-496a-8678-7154e864d2ad</con:id></con:attachment><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><con:entry key="content" value=""/></con:parameters><con:parameterOrder><con:entry>document</con:entry><con:entry>content</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="61873085-7dfc-479e-a5c9-179f827cab0b" name="LogicalDoc - Test Suite Soap - SoapUI initial tests legacy" authProfile="Admin" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="61873085-7dfc-479e-a5c9-179f827cab0bfileName">LogicalDoc---Test-Suite-Soap---SoapUI-initial-tests-legacy</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>
